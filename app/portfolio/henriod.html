@@ -1,0 +1,134 @@
+<style>
+    .background-color {
+
+        background-color: rgb(144, 145, 137);
+    }
+
+    .background-fade-color {
+        background-color: rgba(144, 145, 137, 0.95);
+    }
+</style>
+
+
+<main id="henriod" class="hidden-xs page z-index-2500 background-color">
+    <div ng-if="!isMobile && !(loading || !initializing)" class="fade-in">
+        <div class="portfolio-top-nav">
+            <div class="content-container">
+                <div ng-hide="loading || !initializing" class="fade-in">
+                    <div class="close-button pointer fast-fade-in">
+                        <span href ng-click="goHome()" class="white-ico" ng-include="'assets/img/svg/close.svg'"></span>
+                    </div>
+                    <!--------------------------------------------------->
+                <span ng-click="showHideInfo()" class="portfolio-info-button white-ico pointer"
+                      ng-include="'assets/img/svg/i.svg'">
+                </span>
+                    <!--------------------------------------------------->
+                </div>
+            </div>
+        </div>
+        <div>
+            <div ng-hide="loading || !initializing" class="fade-in">
+                <!--------------------------------------------------->
+                <div class="gallery-slider" ng-init="gallerySlider(3, 1)">
+                    <div ng-switch="imageIndex" class="gallery-slider-image-container fullscreen-slider"
+                         ng-init="onResize()">
+                        <div ng-switch-when="1" class="width-100" ng-class="imageSlideClass"
+                             style="background-image: url('assets/img/henriod/henriod-gajowniczek-01.jpg');">
+                        </div>
+                        <div ng-switch-when="2" class="width-100" ng-class="imageSlideClass"
+                             style="background-image: url('assets/img/henriod/henriod-gajowniczek-02.jpg');">
+                        </div>
+                        <div ng-switch-when="3" class="width-100" ng-class="imageSlideClass"
+                             style="background-image: url('assets/img/henriod/henriod-gajowniczek-03.jpg');">
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------->
+            </div>
+        </div>
+        <div ng-hide="!infoLayer" class="second-layer fast-fade-in background-fade-color">
+            <div class="content-container">
+                <!--------------------------------------------------->
+                <h2 style="color: #FFF;"><span class="section-header big white">Henriod</span></h2>
+                <div class="portfolio-description">
+                    <p>Website design and cms prepared for the Henriod Publicite which is a Swiss advertising agency with long tradition.</p>
+                    <a class="link-visit" href="http://www.henriod-pub.ch/" target="_blank">Visit website</a>
+                </div>
+                <!--------------------------------------------------->
+            </div>
+        </div>
+        <div ng-hide="loading || !initializing" class="portfolio-footer">
+            <div class="content-container gt-sm-flex">
+                <div class="portfolio-info mobile-line">
+                <span ng-click="previousPortfolioProject()"
+                      class="portfolio-nav-left-item white-ico pointer"
+                      ng-include="'assets/img/svg/left.svg'">
+                </span>
+                </div>
+                <div ng-class="{'op-0' : infoLayer}" class="gallery-nav text-center fast-fade-in mobile-line">
+                    <span class="gallery-nav-item" ng-click="slideTo($index+1)"
+                          ng-class="{'active': imageIndex === $index+1}"
+                          ng-repeat="i in range(imagesCount) track by $index">
+                    </span>
+                </div>
+                <div class="portfolio-nav mobile-line">
+                <span ng-click="nextPortfolioProject()" class="portfolio-nav-right-item white-ico pointer"
+                      ng-include="'assets/img/svg/right.svg'">
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div ng-hide="!(loading && initializing)" class="loader-wrapper background-color">
+    <div class="content-container spinner-container">
+        <div class="sk-rotating-plane"></div>
+    </div>
+</div>
+<div id="mobile-view-wrapper" class="background-color">
+    <main id="mobile-view" ng-if="isMobile && !(loading || !initializing)"
+          class="page z-index-2500 portfolio-mobile fade-in">
+        <div class="nav-container">
+            <div class="content-container sm-no-padding">
+                <div class="navbar-header">
+                    <a class="brand gray" href="/" ng-include="'assets/img/svg/logo-gray.svg'"></a>
+
+                    <div class="close-button pointer pull-right">
+                        <span href ng-click="goHome()" class="white-ico" ng-include="'assets/img/svg/close.svg'"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-container fix">
+            <!--------------------------------------------------->
+            <h2><span class="section-header big">Henriod</span></h2>
+            <div class="portfolio-description">
+                <p>Website design and cms prepared for the Henriod Publicite which is a Swiss advertising agency with long tradition.</p>
+            </div>
+            <div class="gallery-slider">
+                <div class="width-100">
+                    <img src="assets/img/henriod/henriod-gajowniczek-small-01.jpg"
+                         class="gallery-image">
+
+                    <img src="assets/img/henriod/henriod-gajowniczek-small-02.jpg"
+                         class="gallery-image">
+
+                    <img src="assets/img/henriod/henriod-gajowniczek-small-03.jpg"
+                         class="gallery-image">
+
+                </div>
+            </div>
+            <!--------------------------------------------------->
+            <div class="portfolio-nav mobile-line">
+                 <span ng-click="previousPortfolioProject()"
+                       class="portfolio-nav-left-item white-ico pointer"
+                       ng-include="'assets/img/svg/left.svg'">
+                </span>
+                <span ng-click="nextPortfolioProject()" class="portfolio-nav-right-item white-ico pointer"
+                      ng-include="'assets/img/svg/right.svg'">
+                </span>
+            </div>
+        </div>
+    </main>
+</div>

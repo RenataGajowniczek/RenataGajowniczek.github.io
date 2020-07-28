@@ -1,0 +1,210 @@
+<header id="home" class="clearfix">
+    <div class="pseudo-sticky" sticky-nav max-tries="25" ms-retry-delay="100" ignore-element-size>
+        <div class="nav-container">
+            <div class=" content-container sm-no-padding">
+
+                <div class="navbar-header">
+
+                    <a class="brand gray" href="/" ng-include="'assets/img/svg/logo-gray.svg'"></a>
+                    <a class="brand white" href="/" ng-include="'assets/img/svg/logo-white.svg'"></a>
+
+                    <button id="mobile-menu-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="menu-item" ng-class="{'flip':scrollingTop}" href="#home" du-smooth-scroll
+                               du-scrollspy offset="80" ng-click="hideMobileMenu()">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-item" ng-class="{'flip':scrollingTop}" href="#portfolio"
+                               du-smooth-scroll du-scrollspy offset="80" ng-click="hideMobileMenu()">
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-item" ng-class="{'flip':scrollingTop}" href="#about" du-smooth-scroll
+                               du-scrollspy offset="80" ng-click="hideMobileMenu()">
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-item" ng-class="{'flip':scrollingTop}" href="#contact" du-smooth-scroll
+                               du-scrollspy offset="80" ng-click="hideMobileMenu()">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cycle-slideshow slideshow-main " data-cycle-slides="> div">
+        <div style="background-image: url('assets/img/slide-gajowniczek-10.jpg')"></div>
+        <div style="background-image: url('assets/img/slide-gajowniczek-02.jpg')"></div>
+        <div style="background-image: url('assets/img/slide-gajowniczek-01.jpg')"></div>
+        <div style="background-image: url('assets/img/slide-gajowniczek-09.jpg')"></div>
+    </div>
+
+   <!-- <div class="gallery-slider slideshow-main">
+        <div ng-switch="homeSlider" class="gallery-slider-image-container home-slider">
+            <div ng-switch-when="1" class="width-100 gallery-slider-right"
+                 style="background-image: url('assets/img/slide-gajowniczek-01.jpg');">
+            </div>
+            <div ng-switch-when="2" class="width-100 gallery-slider-right"
+                 style="background-image: url('assets/img/slide-02.jpg');">
+            </div>
+        </div>
+    </div>-->
+
+    <!-- <div class="cycle-slideshow slideshow-main" ng-switch="homeSlider">
+         <div ng-switch-when="1" class="width-100"
+              style="background-image: url('assets/img/slide-gajowniczek-01.jpg')"></div>
+         <div ng-switch-when="2" class="width-100"
+              style="background-image: url('assets/img/slide-02.jpg')"></div>
+     </div>-->
+</header>
+
+
+<main id="home-main" class="background white">
+    <div id="portfolio" class="clearfix xs-sp-bottom sp-top x2">
+        <div class="content-container clearfix">
+            <h2>
+                <span id="portfolio-header" class="section-header">Portfolio</span>
+            </h2>
+            <div class="thumb padding left-parallax-item">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset"
+                     parallax
+                     parallax-ratio="-0.08">
+                    <img id="kitchen-beats-item" src="assets/img/kitchen-beats-gajowniczek-thumb.jpg"
+                         ng-click="goTo($event, '/kitchen-beats')"
+                         data-animation-color="#41998f">
+                </div>
+            </div>
+            <div class="thumb padding equal-padding">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset"
+                     parallax
+                     parallax-ratio="-0.13">
+                    <img id="matthias-fink-item" src="assets/img/matthias-fink-gajowniczek-thumb.jpg" ng-click="goTo($event, '/matthias-fink')"
+                         data-animation-color="#F09B24">
+                </div>
+            </div>
+            <div class="thumb padding right-parallax-item">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset"
+                     parallax
+                     parallax-ratio="-0.05">
+                    <!-- <img id="indie-rock-item-2" src="assets/img/indie-rock-gajowniczek-thumb.jpg" ng-click="goTo($event, '/indie-rock')" -->
+                    <img id="indie-rock-item-2" src="assets/img/indie-rock-gajowniczek-animated.gif" ng-click="goTo($event, '/indie-rock')"
+                         data-animation-color="#498BBB">
+                </div>
+            </div>
+            <div class="thumb padding left-parallax-item">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset" parallax
+                     parallax-ratio="-0.08">
+                    <img id="lutenisa-item" src="assets/img/lutenitsa-gajowniczek-thumb.jpg" ng-click="goTo($event, '/lutenitsa')"
+                         data-animation-color="#19A26A">
+                </div>
+            </div>
+            <div class="thumb padding">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset" parallax
+                     parallax-ratio="-0.13">
+                    <img id="movie-series-item" src="assets/img/movie-series-gajowniczek-thumb.jpg" ng-click="goTo($event, '/movie-series')"
+                         data-animation-color="#69669F">
+                </div>
+            </div>
+            <div class="thumb padding right-parallax-item">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset" parallax
+                     parallax-ratio="-0.05">
+                    <img id="no-way-item" src="assets/img/no-way-gajowniczek-thumb.jpg" ng-click="goTo($event, '/no-way')"
+                         data-animation-color="#F0C930">
+                </div>
+            </div>
+            <div class="thumb padding left-parallax-item">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset" parallax
+                     parallax-ratio="-0.08">
+                    <img id="magdalena-wielgus-item" src="assets/img/magdalena-wielgus-gajowniczek-thumb.jpg"
+                         ng-click="goTo($event, '/magdalena-wielgus')"
+                         data-animation-color="#FC7572">
+                </div>
+            </div>
+            <div class="thumb padding">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset" parallax
+                     parallax-ratio="-0.13">
+                    <img id="illustration-item" src="assets/img/illustration-gajowniczek-thumb.jpg" ng-click="goTo($event, '/illustration')"
+                         data-animation-color="#2E3349">
+                </div>
+            </div>
+            <div class="thumb padding right-parallax-item">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset" parallax
+                     parallax-ratio="-0.05">
+                    <img id="overcome-autism-item" src="assets/img/pokonac-autyzm-gajowniczek-thumb.jpg"
+                         ng-click="goTo($event, '/overcome-autism')"
+                         data-animation-color="#FC7572">
+                </div>
+            </div>
+            <div class="thumb padding pb-0 left-parallax-item">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset" parallax
+                     parallax-ratio="-0.08">
+                    <!-- <img id="genero-item" src="assets/img/genero-gajowniczek-thumb.jpg" -->
+                    <img id="genero-item" src="assets/img/genero-gajowniczek-animated.gif"
+                         ng-click="goTo($event, '/genero')"
+                         data-animation-color="#f879a3">
+                </div>
+            </div>
+            <div class="thumb padding pb-0">
+                <div class="item parallax grayscale" paralax-vertical-offset="paralaxOffset" parallax
+                     parallax-ratio="-0.13">
+                    <img id="henriod-item" src="assets/img/henriod-gajowniczek-thumb.jpg"
+                         ng-click="goTo($event, '/henriod')"
+                         data-animation-color="#909189">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="clearfix">
+        <div class="content-container centered-container">
+            <h2>
+                <span id="about-header" class="section-header">About</span>
+            </h2>
+            <div class="font-light ">
+                  <p>I’m Renata and I’m a UI designer with a background in traditional graphic design. Minimalism and simplicity is something that I strive for in my projects. Illustration and iconography is my trademark and I use it to tell a better story of the brand or product.</p>  
+                  <p>If you are interested in cooperation, please do not hesitate to contact.</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="clearfix sp sp-bottom">
+        <div class="content-container centered-container">
+            <h2>
+                <span id="contact-header" class="section-header">Contact</span>
+            </h2>
+            <div class="font-light">
+                 <p><span class="mail"><a href="mailto:renata@gajowniczek.org">renata@gajowniczek.org</a></span> +49 (0) 152 180 151 08</p>
+            </div>
+        </div>
+    </div>
+	<div class="social-links-container" class="clearfix">
+        <div class="content-container centered-container">
+			<a id="linkedin" href="https://www.linkedin.com/in/renatagajowniczek" target="_blank"></a>
+			<a id="dribbble" href="https://dribbble.com/RenataGajowniczek" target="_blank"></a>
+			<a id="behance" href="https://www.behance.net/gajowniczek" target="_blank"></a>
+		</div>
+	</div>
+    <div id="impressum" class="clearfix sp sp-bottom">
+        <div class="content-container centered-container">
+			<p>© Renata Gajowniczek, 2020</p>
+		</div>
+	</div>
+</main>
+<script src="js/main.js"></script>
