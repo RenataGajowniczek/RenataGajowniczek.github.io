@@ -76,6 +76,12 @@ var app = angular.module('App', ['ngRoute', 'ngAnimate', 'duScroll', 'angular-pa
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })
+            .when('/nope', {
+              id: 'nope',
+              templateUrl: 'app/portfolio/nope.html',
+              controller: 'PortfolioProjectCtrl',
+              portfolioSlider: true
+            })
             .otherwise({
                 redirectTo: '/'
             });
@@ -173,6 +179,14 @@ app.controller('PortfolioProjectCtrl', function ($rootScope, $scope, $location, 
     $scope.initializing = false;
     $scope.infoLayer = false;
 
+    $scope.goTo = function ($event, href) {
+      var target = $($event.target);
+      $rootScope.backId = target.attr('id');
+      animateProjectBorderOut(target);
+      $timeout(function () {
+        $location.path(href);
+      }, 600);
+    };
 
     $timeout(function () {
         $rootScope.overflowY = false;
@@ -248,6 +262,9 @@ app.controller('PortfolioProjectCtrl', function ($rootScope, $scope, $location, 
         });
     };
 
+    $scope.getAssetDir = function() {
+      return $scope.isMobile ? 'mobile' : 'desktop';
+    };
 
     var onResize = function () {
 
