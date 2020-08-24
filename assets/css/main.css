@@ -1413,6 +1413,7 @@ p {
   margin-bottom: 50px;
   margin-top: 0;
   font-weight: bold;
+  font-family: "orpheuspro", serif;
 }
 
 .p2-row.container {
@@ -1431,6 +1432,7 @@ p {
   height: 80px;
   text-align: center;
   color: white;
+  font-family: "orpheuspro", serif;
 }
 
 .p2-objectives .p2-objectives--title {
@@ -1458,4 +1460,9 @@ p {
   margin: 0.5em 0 0;
   display: block;
   color: black;
+}
+
+.p2-overview-detail-container div {
+  font-size: 22px;
+  line-height: 30px;
 }
