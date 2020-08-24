@@ -29,13 +29,14 @@
       <div>
         <div ng-hide="loading || !initializing" class="fade-in">
           <!---------------------- content start----------------------------->
-          <div class="p2-row" style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-01.jpg')"></div>
+          <div class="p2-row"
+               style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-01.jpg')"></div>
           <div class="p2-row container p2-top">
             <div class="vertical-align">
               <div class="row ">
                 <div class="col-md-8">
                   <h2>Overview</h2>
-                  <div>
+                  <div class="p2-top-description">
                     Nope! is a concept for a fashion brand dedicated for teenagers and young women. It’s main purpose is
                     to
                     promote young designers and produce fair fashion. As a talent incubator Nope! supports emerging
@@ -60,7 +61,8 @@
               </div>
             </div>
           </div>
-          <div class="p2-row" style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-02.jpg')"></div>
+          <div class="p2-row"
+               style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-02.jpg')"></div>
           <div class="p2-row container">
             <div class="vertical-align">
               <div class="row container">
@@ -146,7 +148,8 @@
               </div>
             </div>
           </div>
-          <div class="p2-row" style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-03.jpg')"></div>
+          <div class="p2-row"
+               style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-03.jpg')"></div>
           <div class="p2-row container">
             <div class="vertical-align">
               <div class="row container">
@@ -161,7 +164,8 @@
               </div>
             </div>
           </div>
-          <div class="p2-row" style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-04.jpg')"></div>
+          <div class="p2-row"
+               style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-04.jpg')"></div>
           <div class="p2-row-custom container">
             <div class="vertical-align">
               <div class="container">
@@ -209,72 +213,78 @@
                     <img src="assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-09.jpg" class="img-responsive"/>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <img src="assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-10.jpg" class="img-responsive"/>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-          <div class="p2-row container">
-            <div class="vertical-align">
-              <div class="row container">
-                <div class="col-md-8">
-                  <h2>Learnings and takeaways</h2>
-                  <div>
-                    Products presented under the label Nope! can be categorised as a casual fashion. Their main value is
-                    hidden in small details, quality and fair production. The biggest challenge was to create a visual
-                    language that would stand out from the competition with its own character, but at the same time not
-                    overpower the presented products.
-                  </div>
-                </div>
+          <div class="p2-row-custom ">
+            <div class="row">
+              <div class="col-xs-12">
+                <img src="assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-10.jpg" class="img-responsive"/>
               </div>
             </div>
           </div>
-          <div class="p2-row container">
-            <div class="vertical-align">
-              <div class="row">
-                <div class="col-md-8">
-                  <h2>Similar projects</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <img id="lutenisa-item" class="img-responsive pointer" src="assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-01.jpg"
-                       ng-click="goTo($event, '/indie-rock')"
-                       data-animation-color="#498BBB">
-                  <a class="p2-similar-projects--title pointer">Lutenitsa</a>
-                  <a class="p2-similar-projects--subtitle pointer">Branding/Webdesign</a>
-                </div>
-                <div class="col-md-6 pointer xs-mt-5" ng-click="goTo($event, '/indie-rock')">
-                  <img id="movie-series-item" class="img-responsive pointer" src="assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-02.jpg"
-                       ng-click="goTo($event, '/indie-rock')"
-                       data-animation-color="#498BBB">
-                  <a class="p2-similar-projects--title pointer">Lutenitsa</a>
-                  <a class="p2-similar-projects--subtitle pointer">Branding/Webdesign</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row-container-custom container xs-mt-5">
-            <div class="social-links-container" class="clearfix">
-              <div class="content-container centered-container">
-                <a id="linkedin" href="https://www.linkedin.com/in/renatagajowniczek" target="_blank"></a>
-                <a id="dribbble" href="https://dribbble.com/RenataGajowniczek" target="_blank"></a>
-                <a id="behance" href="https://www.behance.net/gajowniczek" target="_blank"></a>
-              </div>
-            </div>
-            <div id="impressum" class="clearfix  sp-bottom">
-              <div class="content-container centered-container">
-                <p>© Renata Gajowniczek, 2020</p>
-              </div>
-            </div>
-          </div>
-          <!---------------------- content end   ---------------------------->
         </div>
       </div>
+      <div class="p2-row container">
+        <div class="vertical-align">
+          <div class="row container">
+            <div class="col-md-8">
+              <h2>Learnings and takeaways</h2>
+              <div>
+                Products presented under the label Nope! can be categorised as a casual fashion. Their main value is
+                hidden in small details, quality and fair production. The biggest challenge was to create a visual
+                language that would stand out from the competition with its own character, but at the same time not
+                overpower the presented products.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p2-row container">
+        <div class="vertical-align">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Similar projects</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 p2-similar-projects--container">
+              <img id="lutenisa-item" class="img-responsive pointer"
+                   src="assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-01.jpg"
+                   ng-click="goTo($event, '/indie-rock')"
+                   data-animation-color="#498BBB">
+              <a class="p2-similar-projects--title pointer">Lutenitsa</a>
+              <a class="p2-similar-projects--subtitle pointer">Branding/Webdesign</a>
+            </div>
+            <div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container" ng-click="goTo($event, '/indie-rock')">
+              <img id="movie-series-item" class="img-responsive pointer"
+                   src="assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-02.jpg"
+                   ng-click="goTo($event, '/indie-rock')"
+                   data-animation-color="#498BBB">
+              <a class="p2-similar-projects--title pointer">Lutenitsa</a>
+              <a class="p2-similar-projects--subtitle pointer">Branding/Webdesign</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-container-custom container xs-mt-5">
+        <div class="social-links-container" class="clearfix">
+          <div class="content-container centered-container">
+            <a id="linkedin" href="https://www.linkedin.com/in/renatagajowniczek" target="_blank"></a>
+            <a id="dribbble" href="https://dribbble.com/RenataGajowniczek" target="_blank"></a>
+            <a id="behance" href="https://www.behance.net/gajowniczek" target="_blank"></a>
+          </div>
+        </div>
+        <div id="impressum" class="clearfix  sp-bottom">
+          <div class="content-container centered-container">
+            <p>© Renata Gajowniczek, 2020</p>
+          </div>
+        </div>
+      </div>
+      <!---------------------- content end   ---------------------------->
     </div>
+  </div>
+  </div>
   </div>
 </main>
 <div ng-hide="!(loading && initializing)" class="loader-wrapper background-color">

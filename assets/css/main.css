@@ -1393,7 +1393,8 @@ p {
 }
 
 .p2-row-custom .title {
-  font-size: 33px;
+  font-size: 22px;
+  line-height: 30px;
   margin-bottom: 5rem;
   font-weight: 600;
 }
@@ -1405,6 +1406,13 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.p2-top-description {
+  font-size: 30px;
+  line-height: 48px;
 }
 
 .p2-row h2, .p2-row-custom h2 {
@@ -1426,13 +1434,15 @@ p {
 }
 
 .p2-objectives .p2-objectives--number {
-  font-size: 49px !important;
-  background-color: blue;
+  font-size: 46px !important;
+  background-color: #305FC4;
   max-width: 80px;
   height: 80px;
   text-align: center;
   color: white;
   font-family: "orpheuspro", serif;
+  border-radius: 8px;
+  padding-top: 25px;
 }
 
 .p2-objectives .p2-objectives--title {
@@ -1440,14 +1450,26 @@ p {
   font-size: 30px !important;
   margin-top: 14px;
   margin-bottom: 14px;
+  line-height: 30px;
 }
 
 .p2-objectives .p2-objectives--text {
   font-size: 22px !important;
 }
 
+.p2-similar-projects--container:hover {
+  opacity: 0.7;
+  color: black;
+}
+
+.p2-similar-projects--container a:hover{
+  text-decoration: none;
+  color: black;
+}
+
 
 .p2-similar-projects--title {
+  font-family: "orpheuspro", serif;
   font-size: 28px !important;
   font-weight: bold;
   margin: 1.5em 0 0;
