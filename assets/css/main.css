@@ -304,6 +304,13 @@ nav ul li a, nav ul li a:hover, nav ul li a:focus {
   cursor: pointer;
 }
 
+
+.thumb-text-container {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
 
   .navbar-header {
@@ -367,6 +374,10 @@ nav ul li a, nav ul li a:hover, nav ul li a:focus {
   .thumb > div {
     transform: none !important;
     opacity: 1 !important;
+  }
+
+  .thumb-text-container {
+    display: none;
   }
 
   .home-slider > div {
@@ -1387,6 +1398,11 @@ p {
   opacity: 0 !important;
 }
 
+.p2-row-custom {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400
+}
 
 .p2-row-custom .row {
   margin-top: 10rem;
@@ -1408,6 +1424,42 @@ p {
   background-position: center center;
   font-size: 22px;
   line-height: 30px;
+  font-weight: 400;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+
+  .xs-mt-2 {
+    margin-top: 2rem;
+  }
+
+  .p2-row {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .p2-row h2, .p2-row-custom h2 {
+    font-size: 26px !important;
+    line-height: 24px !important;
+  }
+
+  .p2-row-custom {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .p2-top-description {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .p2-row-custom .title {
+    font-size: 16px  !important;
+    line-height: 26px  !important;
+  }
+
 }
 
 .p2-top-description {
@@ -1418,7 +1470,7 @@ p {
 .p2-row h2, .p2-row-custom h2 {
   font-size: 50px;
   text-align: left;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
   font-weight: bold;
   font-family: "orpheuspro", serif;
@@ -1431,6 +1483,10 @@ p {
 .p2-row .vertical-align {
   display: table-cell;
   vertical-align: middle;
+}
+
+.p2-objectives h2 {
+  margin-bottom: 70px;
 }
 
 .p2-objectives .p2-objectives--number {
@@ -1447,14 +1503,23 @@ p {
 
 .p2-objectives .p2-objectives--title {
   font-weight: bold;
-  font-size: 30px !important;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  font-size: 22px !important;
+  margin-top: 30px;
+  margin-bottom: 16px;
   line-height: 30px;
 }
 
 .p2-objectives .p2-objectives--text {
   font-size: 22px !important;
+}
+
+.p2-footer {
+  background-color: #F1F0F0;
+}
+
+.p2-similar-projects--row {
+  padding-top: 6rem;
+  background-color: #F1F0F0;
 }
 
 .p2-similar-projects--container:hover {
