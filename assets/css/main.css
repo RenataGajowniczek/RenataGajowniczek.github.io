@@ -377,7 +377,12 @@ nav ul li a, nav ul li a:hover, nav ul li a:focus {
   }
 
   .thumb-text-container {
-    display: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    line-height: 30;
   }
 
   .home-slider > div {
@@ -1456,8 +1461,8 @@ p {
   }
 
   .p2-row-custom .title {
-    font-size: 16px  !important;
-    line-height: 26px  !important;
+    font-size: 16px !important;
+    line-height: 26px !important;
   }
 
 }
@@ -1527,7 +1532,7 @@ p {
   color: black;
 }
 
-.p2-similar-projects--container a:hover{
+.p2-similar-projects--container a:hover {
   text-decoration: none;
   color: black;
 }
