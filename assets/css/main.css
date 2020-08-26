@@ -304,12 +304,18 @@ nav ul li a, nav ul li a:hover, nav ul li a:focus {
   cursor: pointer;
 }
 
-
-.thumb-text-container {
-  position: absolute;
-  text-align: center;
-  width: 100%;
+@media screen and (min-width: 769px) {
+  .thumb-text-container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 15px;
+  }
 }
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -377,12 +383,12 @@ nav ul li a, nav ul li a:hover, nav ul li a:focus {
   }
 
   .thumb-text-container {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
     width: 100%;
-    font-size: 24px;
-    line-height: 30;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .home-slider > div {
@@ -1207,7 +1213,7 @@ p {
   }
 
   .padding {
-    padding: 80px 40px;
+    padding: 90px 40px;
     float: left;
     width: 33.33%;
   }
@@ -1420,51 +1426,33 @@ p {
   font-weight: 600;
 }
 
-.p2-row {
+.p2-row-image {
   display: table;
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.p2-row {
   font-size: 22px;
   line-height: 30px;
   font-weight: 400;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
-@media (max-width: 768px) {
-
-  .xs-mt-2 {
-    margin-top: 2rem;
-  }
-
+@media (min-width: 769px) {
   .p2-row {
-    font-size: 16px !important;
-    line-height: 26px !important;
+    display: table;
+    height: 100vh;
+    width: 100%;
   }
 
-  .p2-row h2, .p2-row-custom h2 {
-    font-size: 26px !important;
-    line-height: 24px !important;
+  .p2-row-image-mobile {
+    display: none !important;
   }
-
-  .p2-row-custom {
-    font-size: 16px !important;
-    line-height: 26px !important;
-  }
-
-  .p2-top-description {
-    font-size: 16px !important;
-    line-height: 26px !important;
-  }
-
-  .p2-row-custom .title {
-    font-size: 16px !important;
-    line-height: 26px !important;
-  }
-
 }
 
 .p2-top-description {
@@ -1495,7 +1483,7 @@ p {
 }
 
 .p2-objectives .p2-objectives--number {
-  font-size: 46px !important;
+  font-size: 46px;
   background-color: #305FC4;
   max-width: 80px;
   height: 80px;
@@ -1557,4 +1545,73 @@ p {
 .p2-overview-detail-container div {
   font-size: 22px;
   line-height: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+  .xs-mt-2 {
+    margin-top: 2rem;
+  }
+
+  .p2-row {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .p2-row h2, .p2-row-custom h2 {
+    font-family: "orpheuspro", serif !important;
+    font-size: 26px !important;
+    line-height: 24px !important;
+  }
+
+  .p2-row-custom {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .p2-top-description {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .p2-row-custom .title {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .p2-row-custom .row {
+    margin-top: 5rem !important;
+  }
+
+  .p2-objectives .p2-objectives--number {
+    font-size: 22px !important;
+    max-width: 60px !important;
+    height: 60px !important;
+    padding-top: 19px !important;
+  }
+
+  .p2-row-image {
+    display: none !important;
+  }
+
+  .p2-objectives .p2-objectives--title {
+    font-weight: bold;
+    font-size: 16px !important;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    line-height: 26px !important;
+  }
+
+  .p2-similar-projects--title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+
+  .p2-similar-projects--subtitle {
+    line-height: 26px !important;
+    font-size: 16px !important;
+  }
+
 }
