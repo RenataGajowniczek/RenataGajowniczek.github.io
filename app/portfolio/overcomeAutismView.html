@@ -1,157 +1,295 @@
 <style>
-    .background-color {
+	.background-color {
+		background-color: #FFF;
+	}
 
-        background-color: rgb(252, 117, 114);
-    }
+	.background-fade-color {
+		background-color: rgba(240, 201, 48, 0.95);
+	}
 
-    .background-fade-color {
-        background-color: rgba(252, 117, 114, 0.95);
-    }
+	.p2-objectives {
+		background-color: #F2F2F2;
+	}
+
+	.p2-objectives .p2-objectives--number {
+		background-color: #FC7572;
+	}
+
 </style>
 
 
-<main id="overcome-autism" class="hidden-xs page z-index-2500 background-color">
-    <div ng-if="!isMobile && !(loading || !initializing)" class="fade-in">
-        <div class="portfolio-top-nav">
-            <div class="content-container">
-                <div ng-hide="loading || !initializing" class="fade-in">
-                    <div class="close-button pointer fast-fade-in">
-                        <span href ng-click="goHome()" class="white-ico" ng-include="'assets/img/svg/close.svg'"></span>
-                    </div>
-                    <!--------------------------------------------------->
-                <span ng-click="showHideInfo()" class="portfolio-info-button white-ico pointer"
-                      ng-include="'assets/img/svg/i.svg'">
-                </span>
-                    <!--------------------------------------------------->
-                </div>
-            </div>
-        </div>
-        <div>
-            <div ng-hide="loading || !initializing" class="fade-in">
-                <!--------------------------------------------------->
-                <div class="gallery-slider" ng-init="gallerySlider(7, 1)">
-                    <div ng-switch="imageIndex" class="gallery-slider-image-container fullscreen-slider"
-                         ng-init="onResize()">
-                        <div ng-switch-when="1" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/overcome-autism/pokonac-autyzm-gajowniczek-02.jpg');">
-                        </div>
-                        <div ng-switch-when="2" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/overcome-autism/pokonac-autyzm-gajowniczek-05.jpg');">
-                        </div>
-                        <div ng-switch-when="3" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/overcome-autism/pokonac-autyzm-gajowniczek-01.jpg');">
-                        </div>
-                        <div ng-switch-when="4" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/overcome-autism/pokonac-autyzm-gajowniczek-03.jpg');">
-                        </div>
-                        <div ng-switch-when="5" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/overcome-autism/pokonac-autyzm-gajowniczek-04.jpg');">
-                        </div>
-                        <div ng-switch-when="6" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/overcome-autism/pokonac-autyzm-gajowniczek-07.jpg');">
-                        </div>
-                        <div ng-switch-when="7" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/overcome-autism/pokonac-autyzm-gajowniczek-08.jpg');">
-                        </div>
-                    </div>
-                </div>
-                <!--------------------------------------------------->
-            </div>
-        </div>
-        <div ng-hide="!infoLayer" class="second-layer fast-fade-in background-fade-color">
-            <div class="content-container">
-                <!--------------------------------------------------->
-                <h2 style="color: #FFF;"><span class="section-header big white">Pokonać Autyzm</span></h2>
-                <div class="portfolio-description">
-                    <p>‘Overcome Autism’. Visual identity for a concept foundation fighting against children’s autism. Project includes promotion materials, leaflet, patterns for bag and T-shirt, website’s layout and three posters.</p>
-                </div>
-                <!--------------------------------------------------->
-            </div>
-        </div>
-        <div ng-hide="loading || !initializing" class="portfolio-footer">
-            <div class="content-container gt-sm-flex">
-                <div class="portfolio-info mobile-line">
-                <span ng-click="previousPortfolioProject()"
-                      class="portfolio-nav-left-item white-ico pointer"
-                      ng-include="'assets/img/svg/left.svg'">
-                </span>
-                </div>
-                <div ng-class="{'op-0' : infoLayer}" class="gallery-nav text-center fast-fade-in mobile-line">
-                    <span class="gallery-nav-item" ng-click="slideTo($index+1)"
-                          ng-class="{'active': imageIndex === $index+1}"
-                          ng-repeat="i in range(imagesCount) track by $index">
-                    </span>
-                </div>
-                <div class="portfolio-nav mobile-line">
-                <span ng-click="nextPortfolioProject()" class="portfolio-nav-right-item white-ico pointer"
-                      ng-include="'assets/img/svg/right.svg'">
-                </span>
-                </div>
-            </div>
-        </div>
-    </div>
+<main id="overcome-autism" class=" z-index-2500 background-color">
+	<div class="">
+		<div ng-if="!(loading || !initializing)" class="fade-in">
+			<div class="portfolio-top-nav">
+				<div class="">
+					<div ng-hide="loading || !initializing" class="fade-in">
+						<div class="close-button-fixed pointer fast-fade-in">
+							<span href ng-click="goHome()" class="portofolio-close">CLOSE</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div ng-hide="loading || !initializing" class="fade-in">
+					<!---------------------- content start----------------------------->
+					<div class="p2-row-image"
+					style="background-image: url('assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-01.jpg')"></div>
+					<div class="p2-row-image-mobile">
+						<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-01.jpg" width="100%" class="img-responsive"/>
+					</div>
+					<div class="p2-row container p2-top">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Overview</h2>
+									<div class="p2-top-description">
+										<p>‘Pokonać Autyzm’ translated from polish means ‘overcome autism’. It’s a visual identity for a concept foundation fighting against children’s autism. Project includes promotion materials, leaflet, patterns for bag and T-shirt, website’s layout and three posters.</p>
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-3 xs-hidden">
+									<div class="p2-overview-detail-container">
+										<div class="bold">Software</div>
+										<div>Photoshop<br>Indesign</div>
+									</div>
+									<div class="p2-overview-detail-container mt-3">
+										<div class="bold">Team</div>
+										<div>Individual</div>
+									</div>
+									<div class="p2-overview-detail-container mt-3">
+										<div class="bold">Duration</div>
+										<div>2 months</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="p2-row-image" style="background-image: url('assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-02.jpg')"></div>
+					<div class="p2-row-image-mobile">
+						<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-02.jpg" width="100%" class="img-responsive"/>
+					</div>
+					<div class="p2-row container">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Purpose and context</h2>
+									<div>
+										<p>In order to expand my portfolio I decided to work on a project that would be related witch children. For some time I was searching for topics related with childhood illnesses and in the end I decided to work on a branding for children’s foundation fighting against autism.</p>
+										<p>I wanted to find a visual language that would be able to speak about a serious problem without painting it in a bad light. My main goal was to talk about the topics related with sickness in a playful and vigorous way typical for children in order to build a feeling of hope.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row p2-objectives">
+							<div class="vertical-align">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Objectives</h2>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="p2-objectives--number">
+												1
+											</div>
+											<div class="p2-objectives--title">
+												Understanding the problem
+											</div>
+											<div class="p2-objectives--description">
+												Researching various children’s foundations in order to understand their main areas of activity.
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="p2-objectives--number xs-mt-2">
+												2
+											</div>
+											<div class="p2-objectives--title">
+												Finding the visual theme
+											</div>
+											<div class="p2-objectives--description">
+												Looking after topics related with searching for solutions, seemingly unsolvable problems or dissimilarity.
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="p2-objectives--number xs-mt-2">
+												3
+											</div>
+											<div class="p2-objectives--title">
+												Designing the brand
+											</div>
+											<div class="p2-objectives--description">
+												Concentrating on main elements for print and digital assets as well as goodies and takeaways. 
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div>
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Moodboard</h2>
+											<div>
+												<p>Ribbons and tangled lines were the main visual elements that showcasing the seemingly unsolvable problems and dissimilarity. Bright colours and playful typography were supposed to connect the brand with children and approach the serious topic in the more easy going manner.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-image mt-4"
+						style="background-image: url('assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-03.jpg')"></div>
+						<div class="p2-row-image-mobile mt-3">
+							<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-03.jpg" width="100%" class="img-responsive"/>
+						</div>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div class="">
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Branding</h2>
+											<div>
+												<p>The main visual language of Pokonać Autyzm uses various shades of blue and rounded typography in order to show playfulness and vigour typical for children.</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Typography
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-04.jpg" class="img-responsive"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Numbers
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-05.jpg" class="img-responsive"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Primary colours
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-06.jpg" class="img-responsive"/>
+										</div>
+									</div>
+								</div>	
+							</div>		
+						</div>
+						
+						<div class="p2-row-custom container">
+							<div class="row">
+								<div class="col-xs-12 title">
+									Final assets
+								</div>
+							</div>
+						</div>
+						<div class="clearfix mx-15">
+							<div class="col-xs-12 col-sm-6">
+								<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-07.jpg" class="img-responsive"/>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-mt-3">
+								<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-08.jpg" class="img-responsive"/>
+							</div>
+						</div>
+						<div class="row row-custom mx-15 clearfix">
+							<div class="ccol-xs-12 col-sm-6">
+								<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-09.jpg" class="img-responsive"/>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-10.jpg" class="img-responsive"/>
+							</div>
+						</div>
+						<div class="row row-custom mx-15 clearfix">
+							<div class="col-xs-12 col-sm-6">
+								<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-11.jpg" class="img-responsive"/>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<img src="assets/img/overcome-autism/{{getAssetDir()}}/overcome-autism-gajowniczek-12.jpg" class="img-responsive"/>
+							</div>
+						</div>
+									
+									
+
+					</div>
+				</div>
+
+
+
+				<div class="p2-row-custom container">
+					<div class="vertical-align">
+						<div>
+							<div class="row mb-4">
+								<div class="col-md-8">
+									<h2>Learnings and takeaways</h2>
+									<div>
+										<p>Pokonać Autyzm is a project that uses tangled lines as a main element of the visual language. The biggest challenge was to expand those visual elements since the brand required a lot of printed and digital assets. I had to consider various layouts to create a space for both text and imagery.  I think this project was a great exercise in creating a coherent brand.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p2-row p2-similar-projects--row">
+					<div class="container">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Similar projects</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 p2-similar-projects--container">
+									<img id="lutenisa-item" class="img-responsive pointer"
+									src="assets/img/nope/nope-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/nope')"
+									data-animation-color="#305FC4">
+									<a class="p2-similar-projects--title pointer">Nope</a>
+									<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
+								</div>
+								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
+								ng-click="goTo($event, '/dcmn')">
+								<img id="movie-series-item" class="img-responsive pointer"
+								src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
+								ng-click="goTo($event, '/dcmn')"
+								data-animation-color="#2BA5B5">
+								<a class="p2-similar-projects--title pointer">DCMN</a>
+								<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-container-custom p2-footer">
+				<div class=" container xs-mt-5">
+					<div class="social-links-container" class="clearfix">
+						<div class="content-container centered-container">
+							<a id="linkedin" href="https://www.linkedin.com/in/renatagajowniczek" target="_blank"></a>
+							<a id="dribbble" href="https://dribbble.com/RenataGajowniczek" target="_blank"></a>
+							<a id="behance" href="https://www.behance.net/gajowniczek" target="_blank"></a>
+						</div>
+					</div>
+					<div id="impressum" class="clearfix  sp-bottom">
+						<div class="content-container centered-container">
+							<p>© Renata Gajowniczek, 2020</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---------------------- content end   ---------------------------->
+		</div>
+	</div>
 </main>
 <div ng-hide="!(loading && initializing)" class="loader-wrapper background-color">
-    <div class="content-container spinner-container">
-        <div class="sk-rotating-plane"></div>
-    </div>
-</div>
-<div id="mobile-view-wrapper" class="background-color">
-    <main id="mobile-view" ng-if="isMobile && !(loading || !initializing)"
-          class="page z-index-2500 portfolio-mobile fade-in">
-        <div class="nav-container">
-            <div class="content-container sm-no-padding">
-                <div class="navbar-header">
-                    <a class="brand gray" href="/" ng-include="'assets/img/svg/logo-gray.svg'"></a>
-
-                    <div class="close-button pointer pull-right">
-                        <span href ng-click="goHome()" class="white-ico" ng-include="'assets/img/svg/close.svg'"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-container fix">
-            <!--------------------------------------------------->
-            <h2><span class="section-header big">Pokonać Autyzm</span></h2>
-            <div class="portfolio-description">
-                <p>‘Overcome Autism’. Visual identity for a concept foundation fighting against children’s autism. Project includes promotion materials, leaflet, patterns for bag and T-shirt, website’s layout and three posters.</p>
-            </div>
-            <div class="gallery-slider">
-                <div class="width-100">
-                    <img src="assets/img/overcome-autism/pokonac-autyzm-gajowniczek-small-02.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/overcome-autism/pokonac-autyzm-gajowniczek-small-05.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/overcome-autism/pokonac-autyzm-gajowniczek-small-01.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/overcome-autism/pokonac-autyzm-gajowniczek-small-03.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/overcome-autism/pokonac-autyzm-gajowniczek-small-04.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/overcome-autism/pokonac-autyzm-gajowniczek-small-07.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/overcome-autism/pokonac-autyzm-gajowniczek-small-08.jpg"
-                         class="gallery-image">
-
-                </div>
-            </div>
-            <!--------------------------------------------------->
-            <div class="portfolio-nav mobile-line">
-                 <span ng-click="previousPortfolioProject()"
-                       class="portfolio-nav-left-item white-ico pointer"
-                       ng-include="'assets/img/svg/left.svg'">
-                </span>
-                <span ng-click="nextPortfolioProject()" class="portfolio-nav-right-item white-ico pointer"
-                      ng-include="'assets/img/svg/right.svg'">
-                </span>
-            </div>
-        </div>
-    </main>
+	<div class="content-container spinner-container">
+		<div class="sk-rotating-plane"></div>
+	</div>
 </div>

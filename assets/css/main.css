@@ -75,7 +75,7 @@ body {
   line-height: 1.6;
   font-weight: 300;
   color: #2f2f2f;
-  background: #f2f2f2;
+  background: #fff;
 
   overflow-x: hidden;
   /* display: none; */
@@ -251,6 +251,15 @@ nav ul li a, nav ul li a:hover, nav ul li a:focus {
   .xs-mt-5 {
     margin-top: 5rem;
   }
+  
+.container {
+	padding-right: 30px !important;
+	padding-left: 30px !important;
+}
+
+.col-mt-3 {
+	margin-top: 30px;
+}
 
 }
 
@@ -309,10 +318,18 @@ nav ul li a, nav ul li a:hover, nav ul li a:focus {
     position: absolute;
     text-align: center;
     width: 100%;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 30px;
     padding-top: 15px;
+	
   }
+  
+  .thumb-text-container .project-name {
+	font-family: "orpheuspro", serif;
+	font-size: 20px !important;
+	font-weight: bold;
+  }
+
 }
 
 
@@ -387,8 +404,16 @@ nav ul li a, nav ul li a:hover, nav ul li a:focus {
     margin-bottom: 1rem;
     text-align: center;
     width: 100%;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 26px;
+	
+  }
+
+  
+  .thumb-text-container .project-name {
+  	font-family: "orpheuspro", serif;
+	font-size: 18px;
+	font-weight: bold;
   }
 
   .home-slider > div {
@@ -504,11 +529,13 @@ h1 a {
 
 h2 {
   font-size: 1.1875em; /* 1.4 */
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin: 2em 0;
   font-weight: 300;
-  letter-spacing: 2px;
+  font-size: 26px;
   text-align: center;
+  font-weight: bold;
+  font-family: "orpheuspro", serif;
 }
 
 h3 {
@@ -870,7 +897,7 @@ p {
 }
 
 .close-button-fixed {
-  right: 40px;
+  right: 30px;
   top: 20px;
   position: fixed;
   z-index: 2;
@@ -1053,38 +1080,6 @@ p {
   background-color: rgba(25, 162, 106, 0.8);
 }
 
-#magdalena-wielgus.background {
-  background-color: rgb(242, 80, 78);
-}
-
-#magdalena-wielgus .background-fade {
-  background-color: rgba(242, 80, 78, 0.8);
-}
-
-#maison-premiere.background {
-  background-color: rgb(255, 207, 83);
-}
-
-#maison-premiere .background-fade {
-  background-color: rgba(255, 207, 83, 0.8);
-}
-
-#matthias-fink.background {
-  background-color: rgb(240, 155, 36);
-}
-
-#matthias-fink .background-fade {
-  background-color: rgba(240, 155, 36, 0.8);
-}
-
-#no-way.background {
-  background-color: rgb(240, 201, 48);
-}
-
-#no-way .background-fade {
-  background-color: rgba(240, 201, 48, 0.8);
-}
-
 #overcome-autism.background {
   background-color: rgb(252, 117, 114);
 }
@@ -1101,6 +1096,14 @@ p {
   background-color: rgba(105, 102, 159, 0.8);
 }
 
+#dcmn .background {
+	background-color: rgba(43, 165, 181);
+}
+
+#dcmn .background-fade {
+	background-color: rgba(43, 165, 181, 0.8);
+}
+
 #illustration .background {
   background-color: rgb(46, 51, 73);
 }
@@ -1109,20 +1112,20 @@ p {
   background-color: rgba(46, 51, 73, 0.8);
 }
 
-#henriod .background {
-  background-color: rgb(144, 145, 137);
+#craftsy .background {
+  background-color: rgb(90, 83, 177);
 }
 
-#henriod .background-fade {
-  background-color: rgba(144, 145, 137, 0.8);
+#craftsy .background-fade {
+  background-color: rgba(90, 83, 177, 0.8);
 }
 
-#genero .background {
-  background-color: rgb(248, 121, 163);
+#words .background {
+  background-color: rgb(0, 165, 228);
 }
 
-#genero .background-fade {
-  background-color: rgba(248, 121, 163, 0.8);
+#words .background-fade {
+  background-color: rgba(0, 165, 228, 0.8);
 }
 
 .ng-animate-enter {
@@ -1199,11 +1202,20 @@ p {
     padding-right: 0;
     padding-left: 40px;
   }
+  
+
+  #impressum p {
+    font-size: 16px;
+  }
 
 }
 
 @media (min-width: 769px) {
 
+
+	h2 {
+		font-size: 50px;
+	}
   .pb-0 {
     padding-bottom: 0 !important;
   }
@@ -1226,6 +1238,10 @@ p {
   .right-parallax-item {
     padding-right: 0;
     padding-left: 80px;
+  }
+  
+  .col-mt-3 {
+  	margin-top: 0px;
   }
 
 }
@@ -1379,6 +1395,11 @@ p {
   .portfolio-mobile svg {
     fill: #a0a0a0;
   }
+  
+  .p2-row-custom .mb-4 {
+  	margin-bottom: 4rem;
+  }
+
 
 }
 
@@ -1415,8 +1436,21 @@ p {
   font-weight: 400
 }
 
+.mx-15 {
+	margin: 0px 15px;
+}
+
+.p2-row-custom .row.row-custom, .row.row-custom div {
+	margin-top: 30px !important;
+}
+
 .p2-row-custom .row {
   margin-top: 10rem;
+}
+
+.p2-row-custom .row.row-right {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
 }
 
 .p2-row-custom .title {
@@ -1435,24 +1469,46 @@ p {
   background-position: center center;
 }
 
+.p2-row-image.mt-4, .p2-row-image-mobile.mt-3 {
+	margin-top: 3rem;
+}
+
 .p2-row {
   font-size: 22px;
   line-height: 30px;
   font-weight: 400;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 @media (min-width: 769px) {
+	
+	
+	.close-button-fixed {
+	  right: 40px;
+	}  
+	  
+	.container {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+	}
+	
   .p2-row {
     display: table;
     height: 100vh;
     width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   }
 
   .p2-row-image-mobile {
     display: none !important;
   }
+  
+  .p2-row-custom .mb-4 {
+  	margin-bottom: 8rem;
+  }
+  
 }
 
 .p2-top-description {
@@ -1465,9 +1521,12 @@ p {
   text-align: left;
   margin-bottom: 30px;
   margin-top: 0;
-  font-weight: bold;
-  font-family: "orpheuspro", serif;
+  letter-spacing: 2px;
+/*  font-weight: bold;
+  font-family: "orpheuspro", serif;*/
 }
+
+
 
 .p2-row.container {
   background-size: contain;
@@ -1484,7 +1543,6 @@ p {
 
 .p2-objectives .p2-objectives--number {
   font-size: 46px;
-  background-color: #305FC4;
   max-width: 80px;
   height: 80px;
   text-align: center;
@@ -1511,8 +1569,14 @@ p {
 }
 
 .p2-similar-projects--row {
-  padding-top: 6rem;
+  padding-top: 10rem;
   background-color: #F1F0F0;
+  text-align: left;
+}
+
+.p2-similar-projects--row h2 {
+	margin-bottom: 50px !important;
+	text-align: left;
 }
 
 .p2-similar-projects--container:hover {
@@ -1558,12 +1622,27 @@ p {
     font-size: 16px !important;
     line-height: 26px !important;
   }
+  
+  .p2-row-custom .row {
+    margin-top: 5rem;
+  }
 
   .p2-row h2, .p2-row-custom h2 {
     font-family: "orpheuspro", serif !important;
     font-size: 26px !important;
     line-height: 24px !important;
+	letter-spacing: 1.2px;
+    margin-bottom: -6px;
   }
+  
+  .p2-objectives h2 {
+    margin-bottom: 40px;
+    }
+	
+	.p2-branding h2 {
+		margin-bottom: 20px;
+	}
+  
 
   .p2-row-custom {
     font-size: 16px !important;
@@ -1580,13 +1659,13 @@ p {
     line-height: 26px !important;
     margin-bottom: 3rem !important;
   }
-
-  .p2-row-custom .row {
-    margin-top: 5rem !important;
+  
+  .p2-objectives--description {
+	  padding-bottom: 20px;
   }
 
   .p2-objectives .p2-objectives--number {
-    font-size: 22px !important;
+    font-size: 36px !important;
     max-width: 60px !important;
     height: 60px !important;
     padding-top: 19px !important;
@@ -1599,19 +1678,39 @@ p {
   .p2-objectives .p2-objectives--title {
     font-weight: bold;
     font-size: 16px !important;
-    margin-top: 30px;
-    margin-bottom: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     line-height: 26px !important;
+  }
+  
+  .p2-similar-projects--row {
+	  text-align: center;
+	  padding-top: 6rem;
+  }
+  
+  
+  .p2-similar-projects--row h2 {
+	  text-align: center;
   }
 
   .p2-similar-projects--title {
     font-size: 20px !important;
     line-height: 26px !important;
   }
+  
 
   .p2-similar-projects--subtitle {
     line-height: 26px !important;
     font-size: 16px !important;
   }
+  
+  .offset-md-4 {
+      margin-left: 33.333333% !important;
+	  float: right !important;
+  }
+  
+
+  
+
 
 }

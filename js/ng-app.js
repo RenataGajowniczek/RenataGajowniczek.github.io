@@ -16,9 +16,9 @@ var app = angular.module('App', ['ngRoute', 'ngAnimate', 'duScroll', 'angular-pa
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })
-            .when('/matthias-fink', {
-                id: 'matthias-fink',
-                templateUrl: 'app/portfolio/matthiasFinkView2.html',
+            .when('/me-daily', {
+                id: 'me-daily',
+                templateUrl: 'app/portfolio/MeDailyView.html',
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })
@@ -46,15 +46,15 @@ var app = angular.module('App', ['ngRoute', 'ngAnimate', 'duScroll', 'angular-pa
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })
-            .when('/magdalena-wielgus', {
-                id: 'magdalena-wielgus',
-                templateUrl: 'app/portfolio/magdalenaWielgusView.html',
+            .when('/dcmn', {
+                id: 'dcmn',
+                templateUrl: 'app/portfolio/dcmnView.html',
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })
-            .when('/illustration', {
-                id: 'illustration',
-                templateUrl: 'app/portfolio/illustrationView.html',
+            .when('/craftsy', {
+                id: 'craftsy',
+                templateUrl: 'app/portfolio/craftsyView.html',
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })
@@ -64,15 +64,15 @@ var app = angular.module('App', ['ngRoute', 'ngAnimate', 'duScroll', 'angular-pa
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })
-            .when('/genero', {
-                id: 'genero',
-                templateUrl: 'app/portfolio/genero.html',
+            .when('/illustration', {
+                id: 'illustration',
+                templateUrl: 'app/portfolio/illustrationView.html',
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })
-            .when('/henriod', {
-                id: 'henriod',
-                templateUrl: 'app/portfolio/henriod.html',
+            .when('/words', {
+                id: 'words',
+                templateUrl: 'app/portfolio/WordsView.html',
                 controller: 'PortfolioProjectCtrl',
                 portfolioSlider: true
             })

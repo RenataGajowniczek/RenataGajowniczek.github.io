@@ -1,151 +1,150 @@
 <style>
-    .background-color {
+  .background-color {
+    background-color: #fff;
+  }
 
-        background-color: rgb(46, 51, 73);
-    }
+  .background-fade-color {
+    background-color: rgba(90, 83, 177, 0.95);
+  }
 
-    .background-fade-color {
-        background-color: rgba(46, 51, 73, 0.95);
-    }
+  .p2-objectives {
+    background-color: #F2F2F2;
+  }
+  
+  .p2-objectives .p2-objectives--number {
+    background-color: #4847A4;
+  }
+
 </style>
 
 
-<main class="hidden-xs page z-index-2500 background-color">
-    <div ng-if="!isMobile && !(loading || !initializing)" class="fade-in">
-        <div class="portfolio-top-nav">
-            <div class="content-container">
-                <div ng-hide="loading || !initializing" class="fade-in">
-                    <div class="close-button pointer fast-fade-in">
-                        <span href ng-click="goHome()" class="white-ico" ng-include="'assets/img/svg/close.svg'"></span>
-                    </div>
-                    <!--------------------------------------------------->
-                <span ng-click="showHideInfo()" class="portfolio-info-button white-ico pointer"
-                      ng-include="'assets/img/svg/i.svg'">
-                </span>
-                    <!--------------------------------------------------->
-                </div>
+<main id="illustration" class=" z-index-2500 background-color">
+  <div class="">
+    <div ng-if="!(loading || !initializing)" class="fade-in">
+      <div class="portfolio-top-nav">
+        <div class="">
+          <div ng-hide="loading || !initializing" class="fade-in">
+            <div class="close-button-fixed pointer fast-fade-in">
+              <span href ng-click="goHome()" class="portofolio-close">CLOSE</span>
             </div>
+          </div>
         </div>
-        <div>
-            <div ng-hide="loading || !initializing" class="fade-in">
-                <!--------------------------------------------------->
-                <div class="gallery-slider" ng-init="gallerySlider(6, 1)">
-                    <div ng-switch="imageIndex" class="gallery-slider-image-container fullscreen-slider"
-                         ng-init="onResize()">
-                        <div ng-switch-when="1" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/illustration/illustration-gajowniczek-06.jpg');">
-                        </div>
-                        <div ng-switch-when="2" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/illustration/illustration-gajowniczek-09.jpg');">
-                        </div>
-                        <div ng-switch-when="3" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/illustration/illustration-gajowniczek-03.jpg');">
-                        </div>
-                        <div ng-switch-when="4" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/illustration/illustration-gajowniczek-04.jpg');">
-                        </div>
-                        <div ng-switch-when="5" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/illustration/illustration-gajowniczek-05.jpg');">
-                        </div>
-                        <div ng-switch-when="6" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/illustration/illustration-gajowniczek-01.jpg');">
-                        </div>
-                    </div>
+      </div>
+      <div>
+        <div ng-hide="loading || !initializing" class="fade-in">
+          <!---------------------- content start----------------------------->
+          <div class="p2-row-image"
+               style="background-image: url('assets/img/illustration/{{getAssetDir()}}/illustration-gajowniczek-01.jpg')"></div>
+          <div class="p2-row-image-mobile">
+            <img src="assets/img/illustration/{{getAssetDir()}}/illustration-gajowniczek-01.jpg" width="100%" class="img-responsive"/>
+          </div>
+          <div class="p2-row container p2-top">
+            <div class="vertical-align">
+              <div class="row ">
+                <div class="col-md-8">
+                  <h2>Overview</h2>
+                  <div class="p2-top-description">
+					<p>A concept for a learning platform, where people can watch different tutorials related with crafting such as: drawing, painting, sewing, knitting, quilting or making jewelry. Users can not only learn the new skills but also share their progress with other members.</p>
+                  </div>
                 </div>
-                <!--------------------------------------------------->
+                <div class="col-md-offset-1 col-md-3 xs-hidden">
+                  <div class="p2-overview-detail-container">
+                    <div class="bold">Software</div>
+                    <div>Sketch, Invision<br>Illustrator</div>
+                  </div>
+                  <div class="p2-overview-detail-container mt-3">
+                    <div class="bold">Team</div>
+                    <div>Individual</div>
+                  </div>
+                  <div class="p2-overview-detail-container mt-3">
+                    <div class="bold">Duration</div>
+                    <div>3 weeks</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div ng-hide="!infoLayer" class="second-layer fast-fade-in background-fade-color">
-            <div class="content-container">
-                <!--------------------------------------------------->
-                <h2 style="color: #FFF;"><span class="section-header big white">Illustration</span></h2>
-                <div class="portfolio-description">
-                    <p>Set of illustrations made by combining digital and traditional techniques. Drawn and painted elements were scanned and then retouched to achieve a proper texture.</p>
-                </div>
-                <!--------------------------------------------------->
+          </div>
+          <div class="p2-row-image"
+               style="background-image: url('assets/img/illustration/{{getAssetDir()}}/illustration-gajowniczek-03.jpg')"></div>
+          <div class="p2-row-image-mobile">
+            <img src="assets/img/illustration/{{getAssetDir()}}/illustration-gajowniczek-03.jpg" width="100%" class="img-responsive"/>
+          </div>
+          <div class="p2-row-image"
+               style="background-image: url('assets/img/illustration/{{getAssetDir()}}/illustration-gajowniczek-06.jpg')"></div>
+          <div class="p2-row-image-mobile">
+            <img src="assets/img/illustration/{{getAssetDir()}}/illustration-gajowniczek-06.jpg" width="100%" class="img-responsive"/>
+          </div>
+          <div class="p2-row-image"
+               style="background-image: url('assets/img/illustration/{{getAssetDir()}}/illustration-gajowniczek-05.jpg')"></div>
+          <div class="p2-row-image-mobile">
+            <img src="assets/img/illustration/{{getAssetDir()}}/illustration-gajowniczek-05.jpg" width="100%" class="img-responsive"/>
+          </div>
+				<div class="p2-row-custom container">
+					<div class="vertical-align">
+						<div>
+							<div class="row mb-4">
+								<div class="col-md-8">
+									<h2>Learnings and takeaways</h2>
+									<div>
+										<p>My final conclusion is that this project was a great lesson in taking compromises between usability and visual language of the product. Few times I had to simplify some of the layouts. Although they were visually interesting their purpose was not obvious for the users. Instead, I had to find the right balance between visual attractiveness and functionality.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p2-row p2-similar-projects--row">
+					<div class="container">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Similar projects</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 p2-similar-projects--container">
+									<img id="lutenisa-item" class="img-responsive pointer"
+									src="assets/img/nope/nope-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/nope')"
+									data-animation-color="#305FC4">
+									<a class="p2-similar-projects--title pointer">Nope</a>
+									<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
+								</div>
+								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
+								ng-click="goTo($event, '/dcmn')">
+								<img id="movie-series-item" class="img-responsive pointer"
+								src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
+								ng-click="goTo($event, '/dcmn')"
+								data-animation-color="#2BA5B5">
+								<a class="p2-similar-projects--title pointer">DCMN</a>
+								<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+      <div class="row-container-custom p2-footer">
+        <div class=" container xs-mt-5">
+          <div class="social-links-container" class="clearfix">
+            <div class="content-container centered-container">
+              <a id="linkedin" href="https://www.linkedin.com/in/renatagajowniczek" target="_blank"></a>
+              <a id="dribbble" href="https://dribbble.com/RenataGajowniczek" target="_blank"></a>
+              <a id="behance" href="https://www.behance.net/gajowniczek" target="_blank"></a>
             </div>
-        </div>
-        <div ng-hide="loading || !initializing" class="portfolio-footer">
-            <div class="content-container gt-sm-flex">
-                <div class="portfolio-info mobile-line">
-                <span ng-click="previousPortfolioProject()"
-                      class="portfolio-nav-left-item white-ico pointer"
-                      ng-include="'assets/img/svg/left.svg'">
-                </span>
-                </div>
-                <div ng-class="{'op-0' : infoLayer}" class="gallery-nav text-center fast-fade-in mobile-line">
-                    <span class="gallery-nav-item" ng-click="slideTo($index+1)"
-                          ng-class="{'active': imageIndex === $index+1}"
-                          ng-repeat="i in range(imagesCount) track by $index">
-                    </span>
-                </div>
-                <div class="portfolio-nav mobile-line">
-                <span ng-click="nextPortfolioProject()" class="portfolio-nav-right-item white-ico pointer"
-                      ng-include="'assets/img/svg/right.svg'">
-                </span>
-                </div>
+          </div>
+          <div id="impressum" class="clearfix  sp-bottom">
+            <div class="content-container centered-container">
+              <p>© Renata Gajowniczek, 2020</p>
             </div>
+          </div>
         </div>
+      </div>
+      <!---------------------- content end   ---------------------------->
     </div>
+  </div>
 </main>
 <div ng-hide="!(loading && initializing)" class="loader-wrapper background-color">
-    <div class="content-container spinner-container">
-        <div class="sk-rotating-plane"></div>
-    </div>
-</div>
-<div id="mobile-view-wrapper" class="background-color">
-    <main id="mobile-view" ng-if="isMobile && !(loading || !initializing)"
-          class="page z-index-2500 portfolio-mobile fade-in">
-
-        <div class="nav-container">
-            <div class="content-container sm-no-padding">
-                <div class="navbar-header">
-                    <a class="brand gray" href="/" ng-include="'assets/img/svg/logo-gray.svg'"></a>
-
-                    <div class="close-button pointer pull-right">
-                        <span href ng-click="goHome()" class="white-ico" ng-include="'assets/img/svg/close.svg'"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-container fix">
-            <!--------------------------------------------------->
-            <h2><span class="section-header big">Illustration</span></h2>
-            <div class="portfolio-description">
-                <p>Set of illustrations made by combining digital and traditional techniques. Drawn and painted elements were scanned and then retouched to achieve a proper texture.</p>
-            </div>
-            <div class="gallery-slider">
-                <div class="width-100">
-                    <img src="assets/img/illustration/illustration-gajowniczek-small-06.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/illustration/illustration-gajowniczek-small-09.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/illustration/illustration-gajowniczek-small-03.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/illustration/illustration-gajowniczek-small-04.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/illustration/illustration-gajowniczek-small-05.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/illustration/illustration-gajowniczek-small-01.jpg"
-                         class="gallery-image">
-                </div>
-            </div>
-            <!--------------------------------------------------->
-            <div class="portfolio-nav mobile-line">
-                 <span ng-click="previousPortfolioProject()"
-                       class="portfolio-nav-left-item white-ico pointer"
-                       ng-include="'assets/img/svg/left.svg'">
-                </span>
-                <span ng-click="nextPortfolioProject()" class="portfolio-nav-right-item white-ico pointer"
-                      ng-include="'assets/img/svg/right.svg'">
-                </span>
-            </div>
-        </div>
-    </main>
+  <div class="content-container spinner-container">
+    <div class="sk-rotating-plane"></div>
+  </div>
 </div>

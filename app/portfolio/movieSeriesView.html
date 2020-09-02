@@ -1,154 +1,321 @@
 <style>
-    .background-color {
+	.background-color {
+		background-color: #FFF;
+	}
 
-        background-color: rgb(105, 102, 159);
-    }
+	.background-fade-color {
+		background-color: rgba(240, 201, 48, 0.95);
+	}
 
-    .background-fade-color {
-        background-color: rgba(105, 102, 159, 0.95);
-    }
+	.p2-objectives {
+		background-color: #F2F2F2;
+	}
+
+	.p2-objectives .p2-objectives--number {
+		background-color: #69669F;
+	}
+
 </style>
 
 
-<main id="movie-series"
-      class="hidden-xs page z-index-2500 background-color">
-    <div ng-if="!isMobile && !(loading || !initializing)" class="fade-in">
-        <div class="portfolio-top-nav">
-            <div class="content-container">
-                <div ng-hide="loading || !initializing" class="fade-in">
-                    <div class="close-button pointer fast-fade-in">
-                        <span href ng-click="goHome()" class="white-ico" ng-include="'assets/img/svg/close.svg'"></span>
-                    </div>
-                    <!--------------------------------------------------->
-                <span ng-click="showHideInfo()" class="portfolio-info-button white-ico pointer"
-                      ng-include="'assets/img/svg/i.svg'">
-                </span>
-                    <!--------------------------------------------------->
-                </div>
-            </div>
-        </div>
-        <div>
-            <div ng-hide="loading || !initializing" class="fade-in">
-                <!--------------------------------------------------->
-                <div class="gallery-slider" ng-init="gallerySlider(6, 1)">
-                    <div ng-switch="imageIndex" class="gallery-slider-image-container fullscreen-slider"
-                         ng-init="onResize()">
-                        <div ng-switch-when="1" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/movie-series/movie-series-gajowniczek-01.jpg');">
-                        </div>
-                        <div ng-switch-when="2" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/movie-series/movie-series-gajowniczek-09.jpg');">
-                        </div>
-                        <div ng-switch-when="3" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/movie-series/movie-series-gajowniczek-02.jpg');">
-                        </div>
-                        <div ng-switch-when="4" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/movie-series/movie-series-gajowniczek-10.jpg');">
-                        </div>
-                        <div ng-switch-when="5" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/movie-series/movie-series-gajowniczek-11.jpg');">
-                        </div>
-                        <div ng-switch-when="6" class="width-100" ng-class="imageSlideClass"
-                             style="background-image: url('assets/img/movie-series/movie-series-gajowniczek-12.jpg');">
-                        </div>
-                    </div>
-                </div>
-                <!--------------------------------------------------->
-            </div>
-        </div>
-        <div ng-hide="!infoLayer" class="second-layer fast-fade-in background-fade-color">
-            <div class="content-container">
-                <!--------------------------------------------------->
-                <h2 style="color: #FFF;"><span class="section-header big white">Movie Series</span></h2>
-                <div class="portfolio-description">
-                    <p>‘Horror movies’. Set of packages for horror movies: Wrong Turn, Hills Have Eyes, House of Wax. Project includes also one package to store all three movies.</p>
-                </div>
-                <!--------------------------------------------------->
-            </div>
-        </div>
-        <div ng-hide="loading || !initializing" class="portfolio-footer">
-            <div class="content-container gt-sm-flex">
-                <div class="portfolio-info mobile-line">
-                <span ng-click="previousPortfolioProject()"
-                      class="portfolio-nav-left-item white-ico pointer"
-                      ng-include="'assets/img/svg/left.svg'">
-                </span>
-                </div>
-                <div ng-class="{'op-0' : infoLayer}" class="gallery-nav text-center fast-fade-in mobile-line">
-                    <span class="gallery-nav-item" ng-click="slideTo($index+1)"
-                          ng-class="{'active': imageIndex === $index+1}"
-                          ng-repeat="i in range(imagesCount) track by $index">
-                    </span>
-                </div>
-                <div class="portfolio-nav mobile-line">
-                <span ng-click="nextPortfolioProject()" class="portfolio-nav-right-item white-ico pointer"
-                      ng-include="'assets/img/svg/right.svg'">
-                </span>
-                </div>
-            </div>
-        </div>
-    </div>
+<main id="movie-series" class=" z-index-2500 background-color">
+	<div class="">
+		<div ng-if="!(loading || !initializing)" class="fade-in">
+			<div class="portfolio-top-nav">
+				<div class="">
+					<div ng-hide="loading || !initializing" class="fade-in">
+						<div class="close-button-fixed pointer fast-fade-in">
+							<span href ng-click="goHome()" class="portofolio-close">CLOSE</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div ng-hide="loading || !initializing" class="fade-in">
+					<!---------------------- content start----------------------------->
+					<div class="p2-row-image"
+					style="background-image: url('assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-01.jpg')"></div>
+					<div class="p2-row-image-mobile">
+						<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-01.jpg" width="100%" class="img-responsive"/>
+					</div>
+					<div class="p2-row container p2-top">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Overview</h2>
+									<div class="p2-top-description">
+										<p>‘Kino Grozy’ translated from polish means simply horror movies. It’s a packaging concept for such a movies as: Wrong Turn, Hills Have Eyes, House of Wax. Project includes outer packaging and inner packagings to store all three movies.</p>
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-3 xs-hidden">
+									<div class="p2-overview-detail-container">
+										<div class="bold">Software</div>
+										<div>Photoshop<br>Illustrator</div>
+									</div>
+									<div class="p2-overview-detail-container mt-3">
+										<div class="bold">Team</div>
+										<div>Individual</div>
+									</div>
+									<div class="p2-overview-detail-container mt-3">
+										<div class="bold">Duration</div>
+										<div>4 months</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="p2-row-image" style="background-image: url('assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-02.jpg')"></div>
+					<div class="p2-row-image-mobile">
+						<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-02.jpg" width="100%" class="img-responsive"/>
+					</div>
+					<div class="p2-row container">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Purpose and context</h2>
+									<div>
+										<p>I believe that it won’t be a lie, if I say that ‘Kino Grozy’ is an artistic attempt to run away from stereotypical way of showing horror movies. If we decide to search for some inspirations related with this move genre we will mostly find layouts full of blood, torture weapons or screens from the movie itself.</p>
+										<p>To run away from stereotypes I decided to concentrate on place of action for each of the movies and depict them through simplified textures. To make the form of packaging more interesting I searched for foldings typical for brochures and artistic books. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- <div class="p2-row-image" style="background-image: url('assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-02.jpg')"></div>
+						<div class="p2-row-image-mobile">
+							<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-02.jpg" width="100%" class="img-responsive"/>
+						</div> -->
+						
+						<div class="p2-row p2-objectives">
+							<div class="vertical-align">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Objectives</h2>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="p2-objectives--number">
+												1
+											</div>
+											<div class="p2-objectives--title">
+												Finding inspiration
+											</div>
+											<div class="p2-objectives--description">
+												Packaging’s textures refer to forest, desert and an old museum, where action takes place in each of the movies. 
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="p2-objectives--number xs-mt-2">
+												2
+											</div>
+											<div class="p2-objectives--title">
+												Working with paper
+											</div>
+											<div class="p2-objectives--description">
+												In order to find an interesting and practical form for the packagings I had to work first with paper mockups.
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="p2-objectives--number xs-mt-2">
+												3
+											</div>
+											<div class="p2-objectives--title">
+												Combining 2D and 3D
+											</div>
+											<div class="p2-objectives--description">
+												I tried to difersify the space of paper by dividing it into different sections of text, textures and plain areas.   
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div>
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Moodboard</h2>
+											<div>
+												<p>My research was divided on two phases. One of them was concentrated on various textures resembling the place of action from movies. Another one was related with brochures and artistic books. All kind of leporello foldings were a source of very interesting inspirations.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-image mt-4"
+						style="background-image: url('assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-03.jpg')"></div>
+						<div class="p2-row-image-mobile">
+							<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-03.jpg" width="100%" class="img-responsive"/>
+						</div>
+						<!-- <div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div class="">
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Branding</h2>
+											<div>
+												<p>The final design of Indie Rock collection is based on the grid system, where each band is represented by unique set of modules, colours, images of artists and typographical logos. All of the inner packagings are meant to stand in contrast to calm and monochromatic outer packaging.</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Typography
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-04.jpg" class="img-responsive"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Modules
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-05.jpg" class="img-responsive"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Colour sets
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-06.jpg" class="img-responsive"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Layout of the packaging
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-07.jpg" class="img-responsive"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+						
+
+						<div class="p2-row-custom container">
+							<div class="row">
+								<div class="col-xs-12 title">
+									Outer packaging
+								</div>
+							</div>
+						</div>
+							
+						<div class="clearfix mx-15">
+							<div class="col-xs-12 col-sm-6">
+								<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-07.jpg" class="img-responsive"/>
+							</div>
+							<div class="col-xs-12 col-sm-6  col-mt-3">
+								<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-08.jpg" class="img-responsive"/>
+							</div>
+						</div>
+						<div class="row row-custom mx-15 clearfix">
+							<div class="col-xs-12 col-sm-6">
+								<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-09.jpg" class="img-responsive"/>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-10.jpg" class="img-responsive"/>
+							</div>
+						</div>
+
+						<div class="p2-row-custom container">
+							<div class="row">
+								<div class="col-xs-12 title">
+									Inner packaging
+								</div>
+							</div>
+						</div>
+						<div class="clearfix mx-15">
+							<div class="col-xs-12 col-sm-6">
+								<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-11.jpg" class="img-responsive"/>
+							</div>
+							<div class="col-xs-12 col-sm-6  col-mt-3">
+								<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-12.jpg" class="img-responsive"/>
+							</div>
+						</div>
+						<div class="row row-custom mx-15 xs-hidden clearfix">
+							<div class="col-xs-12">
+								<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-13.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="p2-row-custom container">
+					<div class="vertical-align">
+						<div>
+							<div class="row mb-4">
+								<div class="col-md-8">
+									<h2>Learnings and takeaways</h2>
+									<div>
+										<p>Finding the right colour scheme was probably the biggest challenge and learning in this project. Most of the elements in this branding are based on 3 primary colours and typical golden ratio proportion (6:3:1). Where dark blue is a dominant colour, read is an accent for all call to actions and grey remains neutral. Secondary colours present in this branding are reserved for illustrations and tags.  </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p2-row p2-similar-projects--row">
+					<div class="container">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Similar projects</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 p2-similar-projects--container">
+									<img id="lutenisa-item" class="img-responsive pointer"
+									src="assets/img/nope/nope-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/nope')"
+									data-animation-color="#305FC4">
+									<a class="p2-similar-projects--title pointer">Nope</a>
+									<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
+								</div>
+								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
+								ng-click="goTo($event, '/dcmn')">
+								<img id="movie-series-item" class="img-responsive pointer"
+								src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
+								ng-click="goTo($event, '/dcmn')"
+								data-animation-color="#2BA5B5">
+								<a class="p2-similar-projects--title pointer">DCMN</a>
+								<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-container-custom p2-footer">
+				<div class=" container xs-mt-5">
+					<div class="social-links-container" class="clearfix">
+						<div class="content-container centered-container">
+							<a id="linkedin" href="https://www.linkedin.com/in/renatagajowniczek" target="_blank"></a>
+							<a id="dribbble" href="https://dribbble.com/RenataGajowniczek" target="_blank"></a>
+							<a id="behance" href="https://www.behance.net/gajowniczek" target="_blank"></a>
+						</div>
+					</div>
+					<div id="impressum" class="clearfix  sp-bottom">
+						<div class="content-container centered-container">
+							<p>© Renata Gajowniczek, 2020</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---------------------- content end   ---------------------------->
+		</div>
+	</div>
 </main>
 <div ng-hide="!(loading && initializing)" class="loader-wrapper background-color">
-    <div class="content-container spinner-container">
-        <div class="sk-rotating-plane"></div>
-    </div>
-</div>
-
-<div id="mobile-view-wrapper" class="background-color">
-    <main id="mobile-view" ng-if="isMobile && !(loading || !initializing)"
-          class="page z-index-2500 portfolio-mobile fade-in">
-
-        <div class="nav-container">
-            <div class="content-container sm-no-padding">
-                <div class="navbar-header">
-                    <a class="brand gray" href="/" ng-include="'assets/img/svg/logo-gray.svg'"></a>
-
-                    <div class="close-button pointer pull-right">
-                        <span href ng-click="goHome()" class="white-ico" ng-include="'assets/img/svg/close.svg'"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-container fix">
-            <!--------------------------------------------------->
-            <h2><span class="section-header big">Movie Series</span></h2>
-            <div class="portfolio-description">
-                <p>‘Horror movies’. Set of packages for horror movies: Wrong Turn, Hills Have Eyes, House of Wax. Project includes also one package to store all three movies.</p>
-            </div>
-            <div class="gallery-slider">
-                <div class="width-100">
-                    <img src="assets/img/movie-series/movie-series-gajowniczek-small-01.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/movie-series/movie-series-gajowniczek-small-09.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/movie-series/movie-series-gajowniczek-small-02.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/movie-series/movie-series-gajowniczek-small-10.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/movie-series/movie-series-gajowniczek-small-11.jpg"
-                         class="gallery-image">
-
-                    <img src="assets/img/movie-series/movie-series-gajowniczek-small-12.jpg"
-                         class="gallery-image">
-
-                </div>
-            </div>
-            <!--------------------------------------------------->
-            <div class="portfolio-nav mobile-line">
-                 <span ng-click="previousPortfolioProject()"
-                       class="portfolio-nav-left-item white-ico pointer"
-                       ng-include="'assets/img/svg/left.svg'">
-                </span>
-                <span ng-click="nextPortfolioProject()" class="portfolio-nav-right-item white-ico pointer"
-                      ng-include="'assets/img/svg/right.svg'">
-                </span>
-            </div>
-        </div>
-    </main>
+	<div class="content-container spinner-container">
+		<div class="sk-rotating-plane"></div>
+	</div>
 </div>
