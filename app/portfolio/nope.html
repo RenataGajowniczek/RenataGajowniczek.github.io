@@ -10,7 +10,7 @@
   .p2-objectives {
     background-color: #F7C8C3;
   }
-  
+
   .p2-objectives .p2-objectives--number {
     background-color: #305FC4;
   }
@@ -260,20 +260,21 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 p2-similar-projects--container">
+              <div class="col-md-6 p2-similar-projects--container"
+                   ng-click="goToWithTarget('#words-item', '/words')"
+                   data-animation-color="#00A5E4">
                 <img id="words-item" class="img-responsive pointer"
                      src="assets/img/words/words-gajowniczek-thumb.jpg"
-                     ng-click="goTo($event, '/words')"
-                     data-animation-color="#00A5E4">
+                     >
                 <a class="p2-similar-projects--title pointer">Words</a>
                 <a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
               </div>
               <div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
-                   ng-click="goTo($event, '/dcmn')">
+                   ng-click="goToWithTarget('#dcmn-item', '/dcmn')"
+                   data-animation-color="#2BA5B5">
                 <img id="dcmn-item" class="img-responsive pointer"
                      src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
-                     ng-click="goTo($event, '/dcmn')"
-                     data-animation-color="#2BA5B5">
+                     >
                 <a class="p2-similar-projects--title pointer">DCMN</a>
                 <a class="p2-similar-projects--subtitle pointer">Webdesign</a>
               </div>

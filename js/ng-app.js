@@ -188,6 +188,15 @@ app.controller('PortfolioProjectCtrl', function ($rootScope, $scope, $location, 
       }, 600);
     };
 
+  $scope.goToWithTarget = function (targetId, href) {
+    var target = $(targetId);
+    $rootScope.backId = target.attr('id');
+    animateProjectBorderOut(target);
+    $timeout(function () {
+      $location.path(href);
+    }, 600);
+  };
+
     $timeout(function () {
         $rootScope.overflowY = false;
         $scope.initializing = true;
@@ -208,7 +217,6 @@ app.controller('PortfolioProjectCtrl', function ($rootScope, $scope, $location, 
             return;
         }
 
-        $rootScope.animationClass = 'slideup';
         $timeout(function () {
             $timeout(function () {
                 $location.path('/');
@@ -304,6 +312,7 @@ app.controller('PortfolioProjectCtrl', function ($rootScope, $scope, $location, 
         angular.element($window).unbind('resize', onResize);
     });
 
+  onResize();
 });
 
 console.log = function() {};
