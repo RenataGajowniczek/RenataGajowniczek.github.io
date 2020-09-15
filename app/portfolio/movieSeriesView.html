@@ -1,11 +1,15 @@
 <style>
 	.background-color {
-		background-color: #FFF;
+		background-color: #69669F;
 	}
 
 	.background-fade-color {
 		background-color: rgba(240, 201, 48, 0.95);
 	}
+
+  .background-white {
+    background-color: #FFF;
+  }
 
 	.p2-objectives {
 		background-color: #F2F2F2;
@@ -31,7 +35,7 @@
 				</div>
 			</div>
 			<div>
-				<div ng-hide="loading || !initializing" class="fade-in">
+				<div ng-hide="loading || !initializing" class="fade-in background-white">
 					<!---------------------- content start----------------------------->
 					<div class="p2-row-image"
 					style="background-image: url('assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-01.jpg')"></div>
@@ -44,7 +48,7 @@
 								<div class="col-md-8">
 									<h2>Overview</h2>
 									<div class="p2-top-description">
-										<p>‘Kino Grozy’ translated from polish means simply horror movies. It’s a packaging concept for such a movies as: Wrong Turn, Hills Have Eyes, House of Wax. Project includes outer packaging and inner packagings to store all three movies.</p>
+										<p>‘Kino Grozy’ translated from polish means simply horror movies. It’s a name for a packaging concept presented on this page. Design includes outer packaging and inner packaging for such a movies as: Wrong Turn, Hills Have Eyes and House of Wax.</p>
 									</div>
 								</div>
 								<div class="col-md-offset-1 col-md-3 xs-hidden">
@@ -104,7 +108,7 @@
 												Finding inspiration
 											</div>
 											<div class="p2-objectives--description">
-												Packaging’s textures refer to forest, desert and an old museum, where action takes place in each of the movies. 
+												Packagings' textures refer to forest, desert and an old museum, where action takes place in the movies. 
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -115,7 +119,7 @@
 												Working with paper
 											</div>
 											<div class="p2-objectives--description">
-												In order to find an interesting and practical form for the packagings I had to work first with paper mockups.
+												In order to find an interesting and practical form I had to work first with paper mockups.
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -126,7 +130,7 @@
 												Combining 2D and 3D
 											</div>
 											<div class="p2-objectives--description">
-												I tried to difersify the space of paper by dividing it into different sections of text, textures and plain areas.   
+												I tried to difersify the space by dividing it into different sections of text, textures and plain areas.   
 											</div>
 										</div>
 									</div>
@@ -140,7 +144,7 @@
 										<div class="col-md-8">
 											<h2>Moodboard</h2>
 											<div>
-												<p>My research was divided on two phases. One of them was concentrated on various textures resembling the place of action from movies. Another one was related with brochures and artistic books. All kind of leporello foldings were a source of very interesting inspirations.</p>
+												<p>My research was divided on three phases. In the first one I concentrated myself on old horror movies and black and white posters. In the second phase I was researching various textures resembling the place of action from movies. In final phase I concentrated myself on brochures and artistic books. All kind of leporello foldings were a source of very interesting inspirations.</p>
 											</div>
 										</div>
 									</div>
@@ -148,9 +152,9 @@
 							</div>
 						</div>
 						<div class="p2-row-image mt-4"
-						style="background-image: url('assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-03.jpg')"></div>
+						style="background-image: url('assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-04.jpg')"></div>
 						<div class="p2-row-image-mobile">
-							<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-03.jpg" width="100%" class="img-responsive"/>
+							<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-04.jpg" width="100%" class="img-responsive"/>
 						</div>
 						<!-- <div class="p2-row-custom container">
 							<div class="vertical-align">
@@ -245,19 +249,16 @@
 								<img src="assets/img/movie-series/{{getAssetDir()}}/movie-series-gajowniczek-13.jpg" class="img-responsive"/>
 							</div>
 						</div>
-					</div>
-				</div>
-
-
-
-				<div class="p2-row-custom container">
-					<div class="vertical-align">
-						<div>
-							<div class="row mb-4">
-								<div class="col-md-8">
-									<h2>Learnings and takeaways</h2>
-									<div>
-										<p>Finding the right colour scheme was probably the biggest challenge and learning in this project. Most of the elements in this branding are based on 3 primary colours and typical golden ratio proportion (6:3:1). Where dark blue is a dominant colour, read is an accent for all call to actions and grey remains neutral. Secondary colours present in this branding are reserved for illustrations and tags.  </p>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div>
+									<div class="row mb-4">
+										<div class="col-md-8">
+											<h2>Learnings and takeaways</h2>
+											<div>
+												<p>Finding the right colour scheme was probably the biggest challenge and learning in this project. Most of the elements in this branding are based on 3 primary colours and typical golden ratio proportion (6:3:1). Where dark blue is a dominant colour, read is an accent for all call to actions and grey remains neutral. Secondary colours present in this branding are reserved for illustrations and tags.  </p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -269,28 +270,28 @@
 						<div class="vertical-align">
 							<div class="row">
 								<div class="col-md-8">
-									<h2>Similar projects</h2>
+									<h2>Other projects</h2>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6 p2-similar-projects--container">
-									<img id="lutenisa-item" class="img-responsive pointer"
-									src="assets/img/nope/nope-gajowniczek-thumb.jpg"
-									ng-click="goTo($event, '/nope')"
-									data-animation-color="#305FC4">
-									<a class="p2-similar-projects--title pointer">Nope</a>
-									<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
+									<img id="lutenitsa-item" class="img-responsive pointer"
+									src="assets/img/lutenitsa/lutenitsa-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/lutenitsa')"
+									data-animation-color="#1AA26A">
+									<a class="p2-similar-projects--title pointer">Lutenitsa</a>
+									<a class="p2-similar-projects--subtitle pointer">Branding/Webdesign</a>
 								</div>
 								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
-								ng-click="goTo($event, '/dcmn')">
-								<img id="movie-series-item" class="img-responsive pointer"
-								src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
-								ng-click="goTo($event, '/dcmn')"
-								data-animation-color="#2BA5B5">
-								<a class="p2-similar-projects--title pointer">DCMN</a>
-								<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+									ng-click="goTo($event, '/dcmn')">
+									<img id="dcmn-item" class="img-responsive pointer"
+									src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/dcmn')"
+									data-animation-color="#2BA5B5">
+									<a class="p2-similar-projects--title pointer">DCMN</a>
+									<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>

@@ -1,10 +1,14 @@
 <style>
   .background-color {
-    background-color: #fff;
+    background-color: #305FC4;
   }
 
   .background-fade-color {
-    background-color: rgba(247, 200, 195, 0.95);
+    background-color: rgba(48, 95, 196, 0.95);
+  }
+
+  .background-white {
+    background-color: #FFF;
   }
 
   .p2-objectives {
@@ -31,7 +35,7 @@
         </div>
       </div>
       <div>
-        <div ng-hide="loading || !initializing" class="fade-in">
+        <div ng-hide="loading || !initializing" class="fade-in background-white">
           <!---------------------- content start----------------------------->
           <div class="p2-row-image"
                style="background-image: url('assets/img/nope/{{getAssetDir()}}/nope-gajowniczek-01.jpg')"></div>
@@ -44,13 +48,13 @@
                 <div class="col-md-8">
                   <h2>Overview</h2>
                   <div class="p2-top-description">
-					<p>Nope! is a concept for a fashion brand dedicated for teenagers and young women. It’s main purpose is to promote young designers and produce fair fashion. As a talent incubator Nope! supports emerging talents in their first steps of advertising themselves.</p>
+					<p>Nope! is a concept for a fashion brand dedicated for teenagers and young women. Its main purpose is to promote young designers and produce fair fashion. As a talent incubator Nope! supports emerging talents in their first steps of advertising themselves.</p>
                   </div>
                 </div>
                 <div class="col-md-offset-1 col-md-3 xs-hidden">
                   <div class="p2-overview-detail-container">
                     <div class="bold">Software</div>
-                    <div>Sketch, Invision</div>
+                    <div>Sketch <br> Invision</div>
                   </div>
                   <div class="p2-overview-detail-container mt-3">
                     <div class="bold">Team</div>
@@ -77,13 +81,13 @@
                   <div>
                     <p>Nope! is a responsive web application that offers its products to women in standard categories such
                     as:
-                    dresses, shorts, jackets, t-shirts, trausers etc. Each of the products is available in different
+                    dresses, shorts, jackets, t-shirts, trousers etc. Each of the products is available in different
                     sizes
                     and colours. The general interface corresponds with currently available fashion websites. It’s
                     intuitive
                     and easy to learn for the user.</p>
                     <p>What makes this website stand out is a grid system and simple geometrical elements combined with the
-                    photos of the presented products.</p>
+                    photos of the products.</p>
                   </div>
                 </div>
               </div>
@@ -106,8 +110,7 @@
                       Competitor analysis
                     </div>
                     <div class="p2-objectives--description">
-                      Researching strengths and weaknesses of the most popular fashion brands that are currently
-                      available.
+                      Researching strengths and weaknesses of the most popular fashion brands currently available.
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -118,9 +121,7 @@
                       Layout system
                     </div>
                     <div class="p2-objectives--description">
-                      Creating a grid system that allows to present products in efficient and attractive ways to the
-                      users
-                      of the website.
+                      Creating a grid system that allows to present products in efficient and attractive ways to the users.
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -232,23 +233,23 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="p2-row-custom container">
-        <div class="vertical-align">
-		 <div>
-          <div class="row mb-4">
-            <div class="col-md-8">
-              <h2>Learnings and takeaways</h2>
-              <div>
-                <p>Products presented under the label Nope! can be categorised as a casual fashion. Their main value is
-                hidden in small details, quality and fair production. The biggest challenge was to create a visual
-                language that would stand out from the competition with its own character, but at the same time not
-                overpower the presented products.</p>
-              </div>
-            </div>
-		   </div>
-          </div>
+	      <div class="p2-row-custom container">
+	        <div class="vertical-align">
+			 <div>
+	          <div class="row mb-4">
+	            <div class="col-md-8">
+	              <h2>Learnings and takeaways</h2>
+	              <div>
+	                <p>Products presented under the label Nope! can be categorised as a casual fashion. Their main value is
+	                hidden in small details, quality and fair production. The biggest challenge was to create a visual
+	                language that would stand out from the competition with its own character, but at the same time not
+	                overpower the presented products.</p>
+	              </div>
+	            </div>
+			   </div>
+	          </div>
+	        </div>
+	        </div>
         </div>
       </div>
       <div class="p2-row p2-similar-projects--row">
@@ -256,10 +257,29 @@
           <div class="vertical-align">
             <div class="row">
               <div class="col-md-8">
-                <h2>Similar projects</h2>
+                <h2>Other projects</h2>
               </div>
             </div>
-            <div class="row">
+			<div class="row">
+				<div class="col-md-6 p2-similar-projects--container">
+					<img id="words-item" class="img-responsive pointer"
+					src="assets/img/words/words-gajowniczek-thumb.jpg"
+					ng-click="goTo($event, '/words')"
+					data-animation-color="#00A5E4">
+					<a class="p2-similar-projects--title pointer">Words</a>
+					<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
+				</div>
+				<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
+					ng-click="goTo($event, '/me-daily')">
+					<img id="me-daily-item" class="img-responsive pointer"
+					src="assets/img/me-daily/me-daily-gajowniczek-thumb.jpg"
+					ng-click="goTo($event, '/me-daily')"
+					data-animation-color="#4E66D8">
+					<a class="p2-similar-projects--title pointer">Me Daily</a>
+					<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
+				</div>
+			</div>
+<!--            <div class="row">
               <div class="col-md-6 p2-similar-projects--container"
                    ng-click="goToWithTarget('#words-item', '/words')"
                    data-animation-color="#00A5E4">
@@ -270,15 +290,15 @@
                 <a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
               </div>
               <div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
-                   ng-click="goToWithTarget('#dcmn-item', '/dcmn')"
-                   data-animation-color="#2BA5B5">
-                <img id="dcmn-item" class="img-responsive pointer"
-                     src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
+                   ng-click="goToWithTarget('#me-daily-item', '/me-daily')"
+                   data-animation-color="#4E66D8">
+                <img id="me-daily-item" class="img-responsive pointer"
+                     src="assets/img/me-daily/me-daily-gajowniczek-thumb.jpg"
                      >
-                <a class="p2-similar-projects--title pointer">DCMN</a>
-                <a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+                <a class="p2-similar-projects--title pointer">Me Daily</a>
+                <a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

@@ -1,10 +1,14 @@
 <style>
   .background-color {
-    background-color: #FFF;
+    background-color: #1AA26A;
   }
 
   .background-fade-color {
     background-color: rgba(240, 201, 48, 0.95);
+  }
+
+  .background-white {
+    background-color: #FFF;
   }
 
   .p2-objectives {
@@ -31,7 +35,7 @@
 				</div>
 			</div>
 			<div>
-				<div ng-hide="loading || !initializing" class="fade-in">
+				<div ng-hide="loading || !initializing" class="fade-in background-white">
 					<!---------------------- content start----------------------------->
 					<div class="p2-row-image"
 					style="background-image: url('assets/img/lutenitsa/{{getAssetDir()}}/lutenitsa-gajowniczek-01.jpg')"></div>
@@ -50,7 +54,7 @@
 								<div class="col-md-offset-1 col-md-3 xs-hidden">
 									<div class="p2-overview-detail-container">
 										<div class="bold">Software</div>
-										<div>Indesign, Illustrator</div>
+										<div>Indesign <br> Illustrator</div>
 									</div>
 									<div class="p2-overview-detail-container mt-3">
 										<div class="bold">Team</div>
@@ -98,7 +102,7 @@
 												Being inspired by folk
 											</div>
 											<div class="p2-objectives--description">
-												Researching traditional patterns typical for slavic and scandinavian cultures.
+												Researching patterns typical for slavic and scandinavian cultures.
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -261,28 +265,28 @@
 						<div class="vertical-align">
 							<div class="row">
 								<div class="col-md-8">
-									<h2>Similar projects</h2>
+									<h2>Other projects</h2>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6 p2-similar-projects--container">
-									<img id="lutenisa-item" class="img-responsive pointer"
-									src="assets/img/nope/nope-gajowniczek-thumb.jpg"
-									ng-click="goTo($event, '/nope')"
-									data-animation-color="#305FC4">
-									<a class="p2-similar-projects--title pointer">Nope</a>
-									<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
-								</div>
 								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
-								ng-click="goTo($event, '/dcmn')">
-								<img id="movie-series-item" class="img-responsive pointer"
-								src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
-								ng-click="goTo($event, '/dcmn')"
-								data-animation-color="#2BA5B5">
-								<a class="p2-similar-projects--title pointer">DCMN</a>
-								<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+									ng-click="goTo($event, '/indie-rock')">
+									<img id="indie-rock-item" class="img-responsive pointer"
+									src="assets/img/indie-rock/indie-rock-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/indie-rock')"
+									data-animation-color="#498BBB">
+									<a class="p2-similar-projects--title pointer">Indie Rock</a>
+									<a class="p2-similar-projects--subtitle pointer">Packaging</a>
+								</div>
+								<div class="col-md-6 p2-similar-projects--container">
+									<img id="movie-series-item" class="img-responsive pointer"
+									src="assets/img/movie-series/movie-series-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/movie-series')"
+									data-animation-color="#69669F">
+									<a class="p2-similar-projects--title pointer">Horror Movies</a>
+									<a class="p2-similar-projects--subtitle pointer">Packaging</a>
+								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>

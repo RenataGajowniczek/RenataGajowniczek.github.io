@@ -7,6 +7,10 @@
     background-color: rgba(43, 165, 181, 0.95);
   }
 
+  .background-white {
+    background-color: #FFF;
+  }
+
   .p2-objectives {
     background-color: #F2F2F2;
   }
@@ -18,7 +22,7 @@
 </style>
 
 
-<main id="dcmn" class=" z-index-2500">
+<main id="dcmn" class=" z-index-2500 background-color">
   <div class="">
     <div ng-if="!(loading || !initializing)" class="fade-in">
       <div class="portfolio-top-nav">
@@ -31,7 +35,7 @@
         </div>
       </div>
       <div>
-        <div ng-hide="loading || !initializing" class="fade-in">
+        <div ng-hide="loading || !initializing" class="fade-in background-white">
           <!---------------------- content start----------------------------->
           <div class="p2-row-image"
                style="background-image: url('assets/img/dcmn/{{getAssetDir()}}/dcmn-gajowniczek-01.jpg')"></div>
@@ -50,7 +54,7 @@
                 <div class="col-md-offset-1 col-md-3 xs-hidden">
                   <div class="p2-overview-detail-container">
                     <div class="bold">Software</div>
-                    <div>Sketch, Invision</div>
+                    <div>Sketch <br> Invision</div>
                   </div>
                   <div class="p2-overview-detail-container mt-3">
                     <div class="bold">Team</div>
@@ -99,7 +103,7 @@
                       Interviewing stakeholders
                     </div>
                     <div class="p2-objectives--description">
-                      Talking to owners and teams in order to understand the expactations and needs of their clients.
+                      Talking to owners and teams to understand the expactations and needs of their clients.
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -110,7 +114,7 @@
                       Understanding the context
                     </div>
                     <div class="p2-objectives--description">
-                      Researching strengths and weaknesses of the agancies working in the same field as our company.
+                      Researching strengths and weaknesses of other agancies working in the same field.
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -201,49 +205,49 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-				<div class="p2-row-custom container">
-					<div class="vertical-align">
-						<div>
-							<div class="row mb-4">
-								<div class="col-md-8">
-									<h2>Learnings and takeaways</h2>
-									<div>
-										<p>Seemingly easy project can turn into an enormous task, when there are many voices to represent. Filtering through those voices and giving them the same tone was probably the biggest challenge of this assignment. Not to mention understanding different structures and services at the company. Learning the ‘bigger picture’ and later testing the designs was probably the most interesting part of the project.</p>
-									</div>
+			<div class="p2-row-custom container">
+				<div class="vertical-align">
+					<div>
+						<div class="row mb-4">
+							<div class="col-md-8">
+								<h2>Learnings and takeaways</h2>
+								<div>
+									<p>Seemingly easy project can turn into an enormous task, when there are many voices to represent. Filtering through those voices and giving them the same tone was probably the biggest challenge of this assignment. Not to mention understanding different structures and services at the company. Learning the ‘bigger picture’ and later testing the designs was probably the most interesting part of the project.</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
 				<div class="p2-row p2-similar-projects--row">
 					<div class="container">
 						<div class="vertical-align">
 							<div class="row">
 								<div class="col-md-8">
-									<h2>Similar projects</h2>
+									<h2>Other projects</h2>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6 p2-similar-projects--container">
-									<img id="lutenisa-item" class="img-responsive pointer"
-									src="assets/img/nope/nope-gajowniczek-thumb.jpg"
-									ng-click="goTo($event, '/nope')"
-									data-animation-color="#305FC4">
-									<a class="p2-similar-projects--title pointer">Nope</a>
-									<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
+									<img id="movie-series-item" class="img-responsive pointer"
+									src="assets/img/movie-series/movie-series-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/movie-series')"
+									data-animation-color="#69669F">
+									<a class="p2-similar-projects--title pointer">Horror Movies</a>
+									<a class="p2-similar-projects--subtitle pointer">Packaging</a>
 								</div>
 								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
-								ng-click="goTo($event, '/dcmn')">
-								<img id="movie-series-item" class="img-responsive pointer"
-								src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
-								ng-click="goTo($event, '/dcmn')"
-								data-animation-color="#2BA5B5">
-								<a class="p2-similar-projects--title pointer">DCMN</a>
-								<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+									ng-click="goTo($event, '/kitchen-beats')">
+									<img id="kitchen-beats-item" class="img-responsive pointer"
+									src="assets/img/kitchen-beats/kitchen-beats-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/kitchen-beats')"
+									data-animation-color="#42998F">
+									<a class="p2-similar-projects--title pointer">Kitchen Beats</a>
+									<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
+								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>

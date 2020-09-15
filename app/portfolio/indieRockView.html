@@ -1,11 +1,15 @@
 <style>
 	.background-color {
-		background-color: #FFF;
+		background-color: #498BBB;
 	}
 
 	.background-fade-color {
-		background-color: rgba(240, 201, 48, 0.95);
+		background-color: rgba(73, 139, 187, 0.95);
 	}
+
+  .background-white {
+    background-color: #FFF;
+  }	
 
 	.p2-objectives {
 		background-color: #EFECEC;
@@ -31,7 +35,7 @@
 				</div>
 			</div>
 			<div>
-				<div ng-hide="loading || !initializing" class="fade-in">
+				<div ng-hide="loading || !initializing" class="fade-in background-white">
 					<!---------------------- content start----------------------------->
 					<div class="p2-row-image"
 					style="background-image: url('assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-01.jpg')"></div>
@@ -121,7 +125,7 @@
 												Testing paper prototypes
 											</div>
 											<div class="p2-objectives--description">
-												Before ordering profesional prints I had to create 1:1 cardboard prototypes with complicated foldings. 
+												Before ordering profesional prints I had to create 1:1 cardboard prototypes with complicated folding system. 
 											</div>
 										</div>
 									</div>
@@ -135,7 +139,7 @@
 										<div class="col-md-8">
 											<h2>Moodboard</h2>
 											<div>
-												<p>My research was concentrated on grids and geometrical shapes as a main features of my designs. I had to be sure that I can create enough shapes to diversify the final products. Since the packagings would also serve a marketing purpose I wanted to include in the layouts the images of the artists.</p>
+												<p>My research was concentrated on grids and geometrical shapes as a main features of my designs. I had to be sure that I can create enough shapes to diversify the final products. Since the packagings would also serve a marketing purpose I wanted to include in it the images of the artists.</p>
 											</div>
 										</div>
 									</div>
@@ -226,28 +230,21 @@
 								<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-13.jpg" class="img-responsive"/>
 							</div>
 						</div>
-						
-						
-						<div class="p2-row-custom ">
-							<div class="row">
-								<div class="col-xs-12">
-									<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-14.jpg" class="img-responsive"/>
-								</div>
+						<div class="row row-custom mx-15 xs-hidden clearfix">
+							<div class="col-xs-12">
+								<img src="assets/img/indie-rock/{{getAssetDir()}}/indie-rock-gajowniczek-14.jpg" class="img-responsive"/>
 							</div>
 						</div>
-					</div>
-				</div>
-
-
-
-				<div class="p2-row-custom container">
-					<div class="vertical-align">
-						<div>
-							<div class="row mb-4">
-								<div class="col-md-8">
-									<h2>Learnings and takeaways</h2>
-									<div>
-										<p>Finding the right colour scheme was probably the biggest challenge and learning in this project. Most of the elements in this branding are based on 3 primary colours and typical golden ratio proportion (6:3:1). Where dark blue is a dominant colour, read is an accent for all call to actions and grey remains neutral. Secondary colours present in this branding are reserved for illustrations and tags.  </p>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div>
+									<div class="row mb-4">
+										<div class="col-md-8">
+											<h2>Learnings and takeaways</h2>
+											<div>
+												<p>Indie Rock collection is one of those projects that gives an enormous satisfaction simply because the end product is an actual three dimensional object. Designing 1:1 prototypes from cardboard were a huge lesson of precision and patience. It taught me how to arrange space and how to think about the composition. It was also a great exercise in building a diverse and coherent branding.</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -259,28 +256,28 @@
 						<div class="vertical-align">
 							<div class="row">
 								<div class="col-md-8">
-									<h2>Similar projects</h2>
+									<h2>Other projects</h2>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6 p2-similar-projects--container">
-									<img id="lutenisa-item" class="img-responsive pointer"
-									src="assets/img/nope/nope-gajowniczek-thumb.jpg"
-									ng-click="goTo($event, '/nope')"
-									data-animation-color="#305FC4">
-									<a class="p2-similar-projects--title pointer">Nope</a>
+								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
+									ng-click="goTo($event, '/me-daily')">
+									<img id="me-daily-item" class="img-responsive pointer"
+									src="assets/img/me-daily/me-daily-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/me-daily')"
+									data-animation-color="#4E66D8">
+									<a class="p2-similar-projects--title pointer">Me Daily</a>
 									<a class="p2-similar-projects--subtitle pointer">UI/UX Design</a>
 								</div>
-								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
-								ng-click="goTo($event, '/dcmn')">
-								<img id="movie-series-item" class="img-responsive pointer"
-								src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
-								ng-click="goTo($event, '/dcmn')"
-								data-animation-color="#2BA5B5">
-								<a class="p2-similar-projects--title pointer">DCMN</a>
-								<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+								<div class="col-md-6 p2-similar-projects--container">
+									<img id="lutenitsa-item" class="img-responsive pointer"
+									src="assets/img/lutenitsa/lutenitsa-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/lutenitsa')"
+									data-animation-color="#1AA26A">
+									<a class="p2-similar-projects--title pointer">Lutenitsa</a>
+									<a class="p2-similar-projects--subtitle pointer">Branding/Webdesign</a>
+								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>
