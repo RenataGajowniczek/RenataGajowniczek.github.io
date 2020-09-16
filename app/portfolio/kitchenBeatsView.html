@@ -19,6 +19,23 @@
 		background-color: #42998F;
 	}
 
+  .kitchen-beats__persona-background-top {
+    background: linear-gradient(180deg, #FFF 50%, red 0%, brown 0%, rgba(66, 153, 143, 0.95) 0%);
+
+  }
+
+  .kitchen-beats__persona-background-middle {
+    padding-top: 10rem !important;
+    background-color: rgba(66, 153, 143, 0.95);
+  }
+
+  .kitchen-beats__persona-background-bottom {
+    background: linear-gradient(180deg, rgba(66, 153, 143, 0.95) 50%, #FFF 0%);
+  }
+
+  .kitchen-beats__persona-background-bottom > .row {
+    margin-top: 0 !important;
+  }
 </style>
 
 
@@ -131,10 +148,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="p2-row-custom container">
+						<div class="p2-row-custom">
 							<div class="vertical-align">
 								<div class="">
-									<div class="row">
+									<div class="row container">
 										<div class="col-md-8">
 											<h2>Persona</h2>
 											<div>
@@ -142,16 +159,21 @@
 											</div>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-md-10">
-											<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-03.jpg" class="img-responsive"/>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-10 pull-right">
-											<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-04.jpg" class="img-responsive"/>
-										</div>
-									</div>
+                  <div class="kitchen-beats__persona-background-top">
+                    <div class="row container">
+                      <div class="col-md-10">
+                        <img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-03.jpg" class="img-responsive"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kitchen-beats__persona-background-middle"></div>
+                  <div class="kitchen-beats__persona-background-bottom">
+                    <div class="row container">
+                      <div class="col-md-10 pull-right">
+                        <img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-04.jpg" class="img-responsive"/>
+                      </div>
+                    </div>
+                  </div>
 								</div>
 							</div>
 						</div>
@@ -251,9 +273,9 @@
 								</div>
 							</div>
 						</div>
-						
-						
-						
+
+
+
 						<div class="p2-row-custom container">
 							<div class="vertical-align">
 								<div class="">
