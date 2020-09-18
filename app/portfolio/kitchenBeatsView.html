@@ -20,7 +20,7 @@
 	}
 
   .kitchen-beats__persona-background-top {
-    background: linear-gradient(180deg, #FFF 50%, #FFF 0%, #FFF 0%, rgba(66, 153, 143, 0.95) 0%);
+    background: linear-gradient(180deg, #FFF 40%, #FFF 0%, #FFF 0%, rgba(66, 153, 143, 0.95) 0%);
 
   }
 
@@ -30,7 +30,7 @@
   }
 
   .kitchen-beats__persona-background-bottom {
-    background: linear-gradient(180deg, rgba(66, 153, 143, 0.95) 50%, #FFF 0%);
+    background: linear-gradient(180deg, rgba(66, 153, 143, 0.95) 60%, #FFF 0%);
   }
 
   .kitchen-beats__persona-background-bottom > .row {
@@ -148,32 +148,38 @@
 								</div>
 							</div>
 						</div>
-						<div class="p2-row-custom">
+						<div class="p2-row-custom xs-hidden">
 							<div class="vertical-align">
 								<div class="">
-									<div class="row container">
-										<div class="col-md-8">
-											<h2>Persona</h2>
-											<div>
-												<p>Based on my research I created two types of target users - people who genuinely enjoy cooking and do it very often and people who associate cooking with daily chore but appreciate it more during special occasions.</p>
+									<div class="container">
+										<div class="row">
+											<div class="col-md-8">
+												<h2>Persona</h2>
+												<div>
+													<p>Based on my research I created two types of target users - people who genuinely enjoy cooking and do it very often and people who associate cooking with daily chore but appreciate it more during special occasions.</p>
+												</div>
 											</div>
 										</div>
 									</div>
-                  <div class="kitchen-beats__persona-background-top">
-                    <div class="row container">
-                      <div class="col-md-10">
-                        <img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-03.jpg" class="img-responsive"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kitchen-beats__persona-background-middle"></div>
-                  <div class="kitchen-beats__persona-background-bottom">
-                    <div class="row container">
-                      <div class="col-md-10 pull-right">
-                        <img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-04.jpg" class="img-responsive"/>
-                      </div>
-                    </div>
-                  </div>
+									<div class="kitchen-beats__persona-background-top">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-10">
+													<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-03.jpg" class="img-responsive"/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="kitchen-beats__persona-background-middle"></div>
+									<div class="kitchen-beats__persona-background-bottom">
+										<div class="container">
+											<div class="">
+												<div class="col-md-10 pull-right">
+													<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-04.jpg" class="img-responsive"/>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -343,7 +349,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container"
+								<div class="col-md-6 pointer p2-similar-projects--container"
 									ng-click="goTo($event, '/dcmn')">
 									<img id="dcmn-item" class="img-responsive pointer"
 									src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
@@ -352,7 +358,7 @@
 									<a class="p2-similar-projects--title pointer">DCMN</a>
 									<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
 								</div>
-								<div class="col-md-6 p2-similar-projects--container">
+								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container">
 									<img id="illustration-item" class="img-responsive pointer"
 									src="assets/img/illustration/illustration-gajowniczek-thumb.jpg"
 									ng-click="goTo($event, '/illustration')"

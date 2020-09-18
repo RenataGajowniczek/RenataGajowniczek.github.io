@@ -1283,9 +1283,9 @@ p {
   right: 0;
 }
 
-.pointer {
+/*.pointer {
   cursor: pointer;
-}
+}*/
 
 .full-screen-header {
   position: absolute;
