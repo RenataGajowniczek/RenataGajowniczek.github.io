@@ -1,0 +1,407 @@
+<style>
+	.background-color {
+		background-color: #42998F;
+	}
+
+	.background-fade-color {
+		background-color: rgba(66, 153, 143, 0.95);
+	}
+
+  .background-white {
+    background-color: #FFF;
+  }
+
+	.p2-objectives {
+		background-color: #F8F0E4;
+	}
+
+	.p2-objectives .p2-objectives--number {
+		background-color: #42998F;
+	}
+
+  .kitchen-beats__persona-background-top {
+    background: linear-gradient(180deg, #FFF 40%, #FFF 0%, #FFF 0%, rgba(66, 153, 143, 0.95) 0%);
+
+  }
+
+  .kitchen-beats__persona-background-middle {
+    padding-top: 10rem !important;
+    background-color: rgba(66, 153, 143, 0.95);
+  }
+
+  .kitchen-beats__persona-background-bottom {
+    background: linear-gradient(180deg, rgba(66, 153, 143, 0.95) 60%, #FFF 0%);
+  }
+
+  .kitchen-beats__persona-background-bottom > .row {
+    margin-top: 0 !important;
+  }
+</style>
+
+
+<main id="kitchen-beats" class=" z-index-2500 background-color">
+	<div class="">
+		<div ng-if="!(loading || !initializing)" class="fade-in">
+			<div class="portfolio-top-nav">
+				<div class="">
+					<div ng-hide="loading || !initializing" class="fade-in">
+						<div class="close-button-fixed pointer fast-fade-in">
+							<span href ng-click="goHome()" class="portofolio-close">CLOSE</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div ng-hide="loading || !initializing" class="fade-in background-white">
+					<!---------------------- content start----------------------------->
+					<div class="p2-row-image"
+					style="background-image: url('assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-01.jpg')"></div>
+					<div class="p2-row-image-mobile">
+						<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-01.jpg" width="100%" class="img-responsive"/>
+					</div>
+					<div class="p2-row container p2-top">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Overview</h2>
+									<div class="p2-top-description">
+										<p>A concept for ingredients based mobile application that allows the users to save and search for the recipes. From daily recipe recommendations to a grocery list, Kitchen Beats offers various tools and information to make the cooking process simple.</p>
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-3 xs-hidden">
+									<div class="p2-overview-detail-container">
+										<div class="bold">Software</div>
+										<div>Sketch <br> Invision<br> OmniGraffle<br> Keynote</div>
+									</div>
+									<div class="p2-overview-detail-container mt-3">
+										<div class="bold">Team</div>
+										<div>Individual</div>
+									</div>
+									<div class="p2-overview-detail-container mt-3">
+										<div class="bold">Duration</div>
+										<div>4 weeks</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="p2-row-image" style="background-image: url('assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-02.jpg')"></div>
+					<div class="p2-row-image-mobile">
+						<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-02.jpg" width="100%" class="img-responsive"/>
+					</div>
+					<div class="p2-row container">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Purpose and context</h2>
+									<div>
+										<p>How many times do we hear that humans are lazy by nature? It’s a question that bothered me for a while and something that I wanted to challenge. I decided to create an app for people, who are interested in learning new recipes.</p>
+										<p>My hypothesis was, that if we remove the obstacles by a possibility of ordering unknown ingredients and giving a chance to learn something about a foreign culture, we might motivate users to do something more than casual cooking or preparing food from only known ingredients.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row p2-objectives">
+							<div class="vertical-align">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Objectives</h2>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="p2-objectives--number">
+												1
+											</div>
+											<div class="p2-objectives--title">
+												Research
+											</div>
+											<div class="p2-objectives--description">
+												Understand if users need such an application and what would make it easier for them to try new recipes.
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="p2-objectives--number xs-mt-2">
+												2
+											</div>
+											<div class="p2-objectives--title">
+												Ideate
+											</div>
+											<div class="p2-objectives--description">
+												Come up with ideas that will eliminate obstacles and make the cooking process more attractive.
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="p2-objectives--number xs-mt-2">
+												3
+											</div>
+											<div class="p2-objectives--title">
+												Test and implement
+											</div>
+											<div class="p2-objectives--description">
+												Create a prototype, receive feedback and implement useful findings into the final project.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-custom xs-hidden">
+							<div class="vertical-align">
+								<div class="">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-8">
+												<h2>Persona</h2>
+												<div>
+													<p>Based on my research I created two types of target users - people who genuinely enjoy cooking and do it very often and people who associate cooking with daily chore but appreciate it more during special occasions.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="kitchen-beats__persona-background-top">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-10">
+													<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-03.jpg" class="img-responsive"/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="kitchen-beats__persona-background-middle"></div>
+									<div class="kitchen-beats__persona-background-bottom">
+										<div class="container">
+											<div class="">
+												<div class="col-md-10 pull-right">
+													<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-04.jpg" class="img-responsive"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div class="">
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Remove waste</h2>
+											<div>
+												<p>After the first round of interviews and creation of personas, I eliminated all the hypothesis that don’t serve my users. I decided to pursue with learning aspect of my application and concentrated on ingredients, which played an essential role for all interviewed by me people.</p>
+											</div>
+										</div>
+									</div>
+									<div class="row row-right">
+										<div class="col-md-8 pull-right">
+											<h2>Ideation</h2>
+											<div>
+												<p>With help of user stories, I started to create user flows and wireframes. This helped me to visualise specific actions that users would accomplish in the application. It allowed me also to create a proper structure and save some time before starting a more visually oriented design.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-image"
+						style="background-image: url('assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-05.jpg')"></div>
+						<div class="p2-row-image-mobile">
+							<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-05.jpg" width="100%" class="img-responsive"/>
+						</div>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div>
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Moodboard</h2>
+											<div>
+												<p>Once I had the structure of the application in place I started my search for the visual language. To help in visualising my thoughts I created the moodboard with illustration-based style. I find it as the best way to communicate with the client in order to avoid misunderstandings and manage expectations.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-image mt-4"
+						style="background-image: url('assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-06.jpg')"></div>
+						<div class="p2-row-image-mobile mt-3">
+							<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-06.jpg" width="100%" class="img-responsive"/>
+						</div>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div class="">
+									<div class="row">
+										<div class="col-md-8">
+											<h2>Branding</h2>
+											<div>
+												<p>The visual language of Kitchen Beats is meant to be playful and fresh through illustrations, vivid colours and rounded icons. White space and serif font add it some extra elegance.</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Typography
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-07.jpg" class="img-responsive"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Colours
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-08.jpg" class="img-responsive"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											UI elements
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-09.jpg" class="img-responsive"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div class="">
+									<div class="row">
+										<div class="col-xs-12 title">
+											Imagery
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="p2-row-image"
+						style="background-image: url('assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-10.jpg')"></div>
+						<div class="p2-row-image-mobile">
+							<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-10.jpg" width="100%" class="img-responsive"/>
+						</div>
+						
+						
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div class="">
+									<div class="row">
+										<div class="col-xs-12 title">
+											Illustration
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-11.jpg" class="img-responsive"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 title">
+											Final screens
+										</div>
+										<div class="col-xs-12">
+											<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-12.jpg" class="img-responsive"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div class="">
+									<div class="row">
+										<div class="col-xs-12 title">
+											Responsive design
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p2-row-image" style="background-image: url('assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-13.jpg')"></div>
+						<div class="p2-row-image-mobile">
+							<img src="assets/img/kitchen-beats/{{getAssetDir()}}/kitchen-beats-gajowniczek-13.jpg" width="100%" class="img-responsive"/>
+						</div>
+						<div class="p2-row-custom container">
+							<div class="vertical-align">
+								<div class="">
+									<div class="row">
+										<div class="col-md-8">
+											<h2>What didn't go well</h2>
+											<div>
+												<p>During the first interviews, I had difficulties with making my testers say out loud what they think. In order to make this process more efficient, I started to provide scenarios instead of dry instructions. Another problem that I observed was that not all tested by me users fitted the target audience of the product, which made me interview a few additional people.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row row-right">
+									<div class="col-md-8 pull-right">
+										<h2>Learnings and takeaways</h2>
+										<div>
+											<p>This was my first project where I was able to conduct the interviews and understand the ‘why’ behind the product. As a beginner, I fell into a trap of creating an ambitious hypothesis which was difficult to prove or to develop further. Over time I’ve learnt how to ask questions and observe the user’s goals and needs instead of projecting my subjective opinions.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p2-row p2-similar-projects--row">
+					<div class="container">
+						<div class="vertical-align">
+							<div class="row">
+								<div class="col-md-8">
+									<h2>Other projects</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 pointer p2-similar-projects--container"
+									ng-click="goTo($event, '/dcmn')">
+									<img id="dcmn-item" class="img-responsive pointer"
+									src="assets/img/dcmn/dcmn-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/dcmn')"
+									data-animation-color="#2BA5B5">
+									<a class="p2-similar-projects--title pointer">DCMN</a>
+									<a class="p2-similar-projects--subtitle pointer">Webdesign</a>
+								</div>
+								<div class="col-md-6 pointer xs-mt-5 p2-similar-projects--container">
+									<img id="illustration-item" class="img-responsive pointer"
+									src="assets/img/illustration/illustration-gajowniczek-thumb.jpg"
+									ng-click="goTo($event, '/illustration')"
+									data-animation-color="#2E3349">
+									<a class="p2-similar-projects--title pointer">Digital Paintings</a>
+									<a class="p2-similar-projects--subtitle pointer">Personal Project</a>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-container-custom p2-footer">
+				<div class=" container xs-mt-5">
+					<div class="social-links-container" class="clearfix">
+						<div class="content-container centered-container">
+							<a id="linkedin" href="https://www.linkedin.com/in/renatagajowniczek" target="_blank"></a>
+							<a id="dribbble" href="https://dribbble.com/RenataGajowniczek" target="_blank"></a>
+							<a id="behance" href="https://www.behance.net/gajowniczek" target="_blank"></a>
+						</div>
+					</div>
+					<div id="impressum" class="clearfix  sp-bottom">
+						<div class="content-container centered-container">
+							<p>© Renata Gajowniczek, 2020</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---------------------- content end   ---------------------------->
+		</div>
+	</div>
+</main>
+<div ng-hide="!(loading && initializing)" class="loader-wrapper background-color">
+	<div class="content-container spinner-container">
+		<div class="sk-rotating-plane"></div>
+	</div>
+</div>
